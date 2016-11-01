@@ -1,0 +1,162 @@
+\subsection{Parameter estimation}\label{Ap32}
+
+ \begin{table}[!htbp]
+\centering
+\caption{Frequency estimation \textbf{\textit{Hz}}}
+
+\begin{tabular}{c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c } 
+\hline 
+
+\input{Textfiles/10.txt}  
+\input{Textfiles/6.txt}  
+
+\hline 
+\end{tabular}
+\end{table}
+
+
+
+
+
+ \begin{table}[!htbp]
+\centering
+\caption{Damping estimation \textbf{\textit{Hz}}}
+
+\begin{tabular}{c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c } 
+\hline 
+\input{Textfiles/10.txt} 
+\input{Textfiles/7.txt}
+
+
+\hline 
+\end{tabular}
+\end{table}
+
+
+
+
+
+ \begin{table}[!htbp]
+\centering
+\caption{Amplitude estimation \textbf{\textit{a.u}}}
+
+\begin{tabular}{c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c } 
+\hline 
+
+\input{Textfiles/10.txt} 
+\input{Textfiles/8.txt}
+\hline 
+\end{tabular}
+\end{table}
+
+
+
+ \begin{table}[!htbp]
+\centering
+\caption{Phase estimation \textbf{\textit{Deg}}}
+
+\begin{tabular}{c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c } 
+\hline 
+\input{Textfiles/10.txt}   
+\input{Textfiles/9.txt}
+
+\hline 
+\end{tabular}
+\end{table}  
+    
+    
+
+
+\newpage
+
+\subsection{Signal enhancement algorithm}\label{Ap3}  
+
+
+\textbf{Step1:}Arrange the data points $x_{n},n=1\cdots N-1$ in a $(LxM)$-Hankel matrix \textbf{H}, $N+L+M-1,L>K$ 
+
+\begin{equation}
+H= 
+ \begin{pmatrix}
+  x_{0} & x_{1} & \cdots & x_{m} \\
+  x_{1} & x_{2} & \cdots &   \\
+  \vdots  & \vdots  & \ddots & \vdots  \\
+  x_{L-1} & \vdots & \cdots & x_{N-1} 
+ \end{pmatrix}
+\end{equation}
+
+ 
+ \textbf{Step2:} Compute the SVD of \textbf{H}
+ \begin{equation}
+ H=U_{Lxmin(L,M)}\Sigma_{min(L,M)*min(L,M)}V^{H}_{Mxmin(L,M)}
+ \end{equation}
+ 
+ \textbf{Step3:} Truncate the SVD of \textbf{H} on order to outcome the best rank-K' approximation 
+ 
+ \begin{equation}
+ \hat{H}=\hat{U}_{LxK'}f\big\{\hat{\Sigma}_{K'*K'}\big\}\hat{V}^{H}_{MxK'}
+ \end{equation}
+ 
+ The rank K' is equal to the model order which correspond to the number of complex exponential in the signal. If the signal is real, then K' is twice the model order. The correction is different of the singular values is $f\big\{\hat{\Sigma}_{K'*K'}\big\}=(\Sigma_{1})$  for Cadzow and $f\big\{\hat{\Sigma}_{K'*K'}\big\}=(\Sigma^{2}_{1}-L\sigma^{2}_{w}I_{K})\Sigma_{1}^{-1}$ for MV.
+ 
+\textbf{Step4:} Average along the anti-diagonal the the reconstructed matrix \hat{H} which leads to a the the Hankel matrix
+
+\begin{equation}
+\hat{H}_{ant-diag-ave}=Average(\hat{H})
+\end{equation}
+
+\textbf{Step5:} Extract the first column and the last row of the newly computed Hankel matrix $\hat{H}_{ant-diag-ave}$
+
+
+
+\subsection{Multi channel signal enhancement algorithm}\label{Ap31}  
+
+
+\textbf{Step1:}Arrange the data points $x^{q}_{n},n=1\cdots N-1$ in a $(LxM)$-Hankel matrix \textbf{H}, $N+L+M-1,L>K$ for all the channel data $q=1\cdots Q$ 
+
+\begin{equation}
+H_{1}= 
+ \begin{pmatrix}
+  x_{0} & x_{1} & \cdots & x_{m} \\
+  x_{1} & x_{2} & \cdots &   \\
+  \vdots  & \vdots  & \ddots & \vdots  \\
+  x_{L-1} & \vdots & \cdots & x_{N-1} 
+ \end{pmatrix}\cdots \cdots 
+ H_{Q}= 
+ \begin{pmatrix}
+  x_{0} & x_{1} & \cdots & x_{m} \\
+  x_{1} & x_{2} & \cdots &   \\
+  \vdots  & \vdots  & \ddots & \vdots  \\
+  x_{L-1} & \vdots & \cdots & x_{N-1} 
+ \end{pmatrix}
+\end{equation}
+
+ \textbf{Step2:} Form a block Hankel matrix
+ \begin{equation}
+ H=[H_{1}|H_{2}|\cdots H_{Q}]
+ \end{equation}
+ 
+ \textbf{Step3:} Compute the SVD of \textbf{H}
+ \begin{equation}
+ H=U_{Lxmin(L,M)}\Sigma_{min(L,M)*min(L,M)}V^{H}_{Mxmin(L,M)}
+ \end{equation}
+ 
+ \textbf{Step4:} Truncate the SVD of \textbf{H} on order to outcome the best rank-K' approximation 
+ 
+ \begin{equation}
+ \hat{H}=\hat{U}_{LxK'}f\big\{\hat{\Sigma}_{K'*K'}\big\}\hat{V}^{H}_{MxK'}
+ \end{equation}
+ 
+ The rank K' is equal to the model order which correspond to the number of complex exponential in the signal. If the signal is real, then K' is twice the model order. The correction is different of the singular values is $f\big\{\hat{\Sigma}_{K'*K'}\big\}=(\Sigma_{1})$  for Cadzow and $f\big\{\hat{\Sigma}_{K'*K'}\big\}=(\Sigma^{2}_{1}-L\sigma^{2}_{w}I_{K})\Sigma_{1}^{-1}$ for MV.
+ 
+ 
+\textbf{Step5:} Average along the anti-diagonal the the reconstructed matrix $\hat{H}$ which leads to a the the Hankel matrix
+
+\begin{equation}
+\hat{H}_{ant-diag-ave}=Average(\hat{H})
+\end{equation}
+
+
+
+ \textbf{Step5:} Extract  the the Hankel matrix corresponding to the voxel of interest $H_{interest}$
+ 
+\textbf{Step6:} Extract the first column and the last row of the newly computed Hankel matrix $H_{interest}$

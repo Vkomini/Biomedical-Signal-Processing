@@ -1,0 +1,5 @@
+  \footnotesize     
+$Compo$&$HSVD$&$HTLS$&$HTLSPKFD$&$HSVD$&$HTLS$&$HTLSPKFD$\\  
+  \hline    
+ $K$&$Pure signal$&$Pure signal$&$Pure signal$&$Noisy signal$&$Noisy signal$&$Noisy signal$\\
+  \hline  

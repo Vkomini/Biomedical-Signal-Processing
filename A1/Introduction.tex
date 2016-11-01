@@ -1,0 +1,69 @@
+\section{Introduction}
+
+The underlying methodology of subspace signal processing is the decomposition of the signal into mutually orthogonal subspaces wherein one of them consist of the noisy subspace. This is ensured under the assumption that the signal itself contains two parts. One is the low-rank linear model for the "clean" signal and the additive uncorrelated (white) noise. Therefore the energy of the least correlated noise contaminating the whole signal is concentrated in a lower subspace compare to the highly correlated signal. Recovering the wanted signal after decomposition is performed by mapping the highly correlated subspaces onto the space where the structure is the closest to the clean signal. Additionally, the noise is supposed to be white before application of this decomposition, otherwise, whitening of the noise is required in case it is colored. This is possible with the noise covariance matrix to be known. Apart from filtering, subspace signal processing could also be employed for parameter estimation of an underlying estimation model. The outcome is significantly less biased compared to other existing methodologies, though they suffer from serious drawback. Very little prior knowledge is possible to incorporate into the framework. Last but not least, subspace signal processing enables simultaneous processing of multiple channels. This is an important feature since it is possible to benefit from cross-over information. Magnetic resonance spectroscopy MRS is one of the domains where subspace signals are heavily utilized. The general outline of the subspace signal processing is as follow:
+
+\begin{itemize}
+    \item separate the $(\hat{H}=>signal+noise)$  subspace where the original signal $H=\hat{H}+W$
+    \item suppress the $(W=>noise-only)$ subspaces from the noise only subspace. 
+    \item further suppression of the noise in the reconstructed space. 
+\end{itemize}
+
+In order to apply subspace methods for parameter estimation, an underlying model has to be utilized with well defined parameters. Exponentially damped sinusoidal $(EDS)$ is a very convenient model and widely utilized in different signal processing applications figure \ref{EDS}. Hereby the signal being detected in the sensing device is modeled as a superposition of damping signals at distinct frequencies contaminated with white Gaussian noise $(wgn)$ equation \ref{eq1}. These components accommodate the information regarding the tissue properties, therefore accurate estimation of the amplitude $a_{k}$, frequency $f_{k}$, phase $\phi_{k}$ and damping $d_{k}$ is very critical. The analysis is performed in the frequency domain.   
+
+ 
+\begin{equation}\label{eq1}
+y(t)=\sum_{k=1}^{K} a_{k}exp(j\phi_{k})exp(-d_{k}t+2\pi f_{k}t)\delta t+wgn
+\end{equation}
+
+Utilizing the estimated parameter, a modeled signal (EDS) is then employed for peaks of interest computation . Via subspace methods based on (total) least square approximation a best fit between the modeled and the original signal is computed. This will enable a good estimation of peaks closely spaced,as well as their amplitudes. 
+
+
+
+Apart from artifact suppression, subspace methods can be further employed for the additional enhancement of the signal. The signal represented into a (\textbf{H}) Hankel data matrix could be seen as superposition of the $\hat{H}$ exact signal and the ($W$) pure noise. Taking into account that \textbf{wgn} is fully orthogonal to the signal to be estimated. Using an analogy of multivariate version of Pythagorean lemma for triangle, it is possible to recover the clean signal. Whereby the exact noise could be recovered via SVD as follow:
+
+
+\begin{figure}[!htbp]
+\minipage{0.5\textwidth}%
+\centering
+\begin{equation}
+ \hat{H}=\hat{U}\hat{\Sigma}\hat{V^{h}}=[\hat{U_{1}} \hat{U_{2}}]
+\begin{pmatrix}
+ \hat{\Sigma_{1}}&0\\
+ 0&0
+ \end{pmatrix}
+ [\hat{V_{1}} \hat{V_{2}}]
+ \end{equation}
+\endminipage\hfill
+\minipage{0.5\textwidth}%
+\centering
+ \begin{equation}\label{eq3}
+ H=U \Sigma V^{h}=[U_{1} U_{2}]
+\begin{pmatrix}
+ \Sigma_{1}&0\\
+ 0&\Sigma_{2}
+ \end{pmatrix}
+ [V_{1} V_{2}] 
+\end{equation}
+\endminipage\hfill
+\end{figure}
+
+This estimation is possible under the fulfillment of the following conditions:
+\begin{itemize}
+    \item the clean signal is orthogonal to the noise $\hat{H^{T}}W=0$
+    \item orthogonality of matrices $\hat{V_{1}}$ and $\hat{V_{1}}$ must be preserved in the inner product $\hat{V_{1}}W^{T}W\hat{V_{2}}=0$ \footnote{$W^{T}W=\lambda I$} 
+    \item the smallest singular values $\sigma_{k}$ ins $\Sigma_{1}$ have to be larger than the largest noise singular value $\sigma_{K+1}$ in the $\Sigma_{2}$    
+\end{itemize}
+
+Noise separation performance depends critically on the the three criteria above, which in practice are never achieved, apart for the last condition. In order to satisfy the first criteria as the most important one it could be seen as an optimisation method. Minimizing the cost function in equation \ref{eq2} is completed by computing the transformation matrix $T$ such as:
+
+\begin{equation}\label{eq2}
+min||HT-\hat{H}||^{2}\rightarrow T=(H^{T}H)^{-1}H^{T}\hat{H}\rightarrow HT=H(H^{T}H)^{-1}H^{T}\hat{H}
+\end{equation}
+
+This estimation is known to be the minimum variance (MV) \cite{11} which gives the orthogonal projection $\hat{H}$ into the column space of $H$. Combining equations \ref{eq3} and \ref{eq2} the final estimation is equated as below:
+
+\begin{equation}\label{eq5}
+HT=UU^{T}\hat{H}=U_{1}U_{1}^{T}\hat{U_{1}}\hat{\Sigma_{1}}\hat{V_{1}^{T}}=U_{1}(\Sigma^{2}_{1}-\sigma^{2}_{w}I_{K})\Sigma_{1}^{-1}V_{1}^{H}=U_{1}(\Sigma^{2}_{1}-L\sigma^{2}_{v}I_{K})\Sigma_{1}^{-1}V_{1}^{H}
+\end{equation}
+
+Herein can be seen that the system is introducing a bias in the estimation as far as $U_{1}\neq\hat{U_{1}}$ and $\sigma^{2}_{v}=\frac{1}{L(M-K)}\sum_{i=K+1}^{M}\sigma_{1}^{2}$ is the average value of the noisy singular values. An outline of this algorithm could also be found in \ref{Ap3}. This method is a further improvement of Cadzow algorithm \cite{5} where the estimation is performed as $HT=U_{1}(\Sigma_{1})V_{1}^{H}$.

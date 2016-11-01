@@ -1,0 +1,142 @@
+\documentclass[a4paper]{article}
+\usepackage{fancyhdr}
+\usepackage[pdftex]{graphicx}
+\usepackage{sidecap}
+\usepackage{listings}
+\usepackage{color}
+\usepackage[export]{adjustbox}
+\usepackage{subcaption}
+\usepackage{graphicx}
+\usepackage{filecontents}
+\usepackage{pgffor}
+\usepackage{forloop}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{lineno}
+\usepackage{amsmath}
+\usepackage{hyperref}
+\usepackage{mathtools}
+\usepackage{amsmath,amsthm,amssymb}
+\numberwithin{equation}{subsection}
+\numberwithin{figure}{subsection}
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+\definecolor{mygreen}{RGB}{25,172,0} % color values Red, Green, Blue
+\definecolor{mylilas}{RGB}{170,55,241}
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta, 
+    urlcolor=cyan,
+    pdfpagemode=FullScreen,
+}
+\usepackage{geometry}
+ \geometry{
+ a4paper,
+ total={210mm,297mm},
+ left=8mm,
+ right=8mm,
+ top=15mm,
+ bottom=15mm,
+ }
+
+\usepackage{glossaries}
+
+
+\makeglossaries
+\newglossaryentry{FSM}
+{
+    name=FSM,
+    description={Finite State Machine}
+}
+
+
+
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{\href{Vangjush.Komini@uzleuven.be}{Vangjush Komini}}
+\lhead{\href{https://www.kuleuven.be/kuleuven/}{KU Leuven}}
+\rfoot{Page \thepage}
+\lfoot{Biomedical Data Processing part 2}
+
+
+\lstset{inputpath=Code1}
+\graphicspath{{Images1/}}
+
+\include{Glossary}
+
+
+\begin{titlepage}
+
+\title{Assignment1\\\centerline{\textit{Subspace Signal Processing}} }
+
+\author{
+\href{mailto:vangjush.komini@uzleuven.be}{Vangjush Komini}\\  \textit{r0612470} \\
+\href{mailto:vangjush.komini@uzleuven.be}{vangjush.komini@uzleuven.be}\\
+}
+
+
+
+
+
+\end{titlepage}
+
+
+
+
+\begin{document}
+
+
+
+\maketitle
+\begin{center}
+\Large \href{https://onderwijsaanbod.kuleuven.be/syllabi/e/H06W1AE.htm#activetab=doelstellingen_idp41200}{Biomedical Data Processing Part II}
+\end{center}
+
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=0.3\textwidth]{icon2.png}
+\end{figure}
+
+\newpage
+\section{Introduction}
+
+The underlying methodology of subspace signal processing is the decomposition of the signal into mutually orthogonal subspaces wherein one of them consist of the noisy subspace. This is ensured under the assumption that the signal itself contains two parts. One is the low-rank linear model for the "clean" signal and the additive uncorrelated (white) noise. Therefore the energy of the least correlated noise contaminating the whole signal is concentrated in a lower subspace compare to the highly correlated signal. Recovering the wanted signal after decomposition is performed by mapping the highly correlated subspaces onto the space where the structure is the closest to the clean signal. Additionally, the noise is supposed to be white before application of this decomposition, otherwise, whitening of the noise is required in case it is colored. This is possible with the noise covariance matrix to be known. Apart from filtering, subspace signal processing could also be employed for parameter estimation of an underlying estimation model. The outcome is significantly less biased compared to other existing methodologies, though they suffer from serious drawback. Very little prior knowledge is possible to incorporate into the framework. Last but not least, subspace signal processing enables simultaneous processing of multiple channels. This is an important feature since it is possible to benefit from cross-over information. Magnetic resonance spectroscopy MRS is one of the domains where subspace signals are heavily utilized. The general outline of the subspace signal processing is as follow:
+
+\begin{itemize}
+    \item separate the $(\hat{H}=>signal+noise)$  subspace where the original signal $H=\hat{H}+W$
+    \item suppress the $(W=>noise-only)$ subspaces from the noise only subspace. 
+    \item further suppression of the noise in the reconstructed space. 
+\end{itemize}
+
+
+
+\include{Q1}
+\include{Q2}
+\include{Q3}
+\include{Q4}
+
+
+\clearpage
+
+\bibliographystyle{unsrt}
+\bibliography{Bibl}
+
+\clearpage
+\appendix
+
+\include{Ap1}
+\include{Ap2}
+\include{Ap3}
+\include{Ap4}
+%\include{Appendix}
+
+\end{document}
+

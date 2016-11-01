@@ -1,0 +1,80 @@
+\section{PCA vs ICA}
+
+The general aim of the BSS of a data matrix \textbf{X} is to decompose this matrix into mixing matrix \textbf{A} scaling matrix \textbf{D}$=diag(\lambda_{1},\lambda_{2},\lambda_{3},\cdots,\lambda_{R})$ and matrix of the unknown source \textbf{B} \cite{3}. The general notation is as in the equation \ref{eq1}. The matrix \textbf{e} is noise which is presented in any underlying model.
+
+\begin{equation}\label{eq1}
+    X=ADB^{T}+e
+\end{equation}
+
+Principal component analysis PCA and independent component analysis ICA are the two main approaches being explored in here. Both this method are linear and nonparametric method which try to separate separate the the linearly mixed source  \cite{1},\cite{2}. 
+
+PCA gets the mixed channels and try to center each channel. Upon this centered data the covariance matrix is computed. Since the covariance matrix is not diagonal the covariance coefficients testify a linear relation of each channels. A linear transformation of the data is required where its respective covariance matrix is now fully diagonal (i.e. the new features are uncorrelated). This is performed either via eigenvalue decomposition (EVD) or singular value decomposition (SVD) \cite{1} where the final matrix will be the mixing matrix A the scaling diagonal matrix B and the principal component which are orthogonal. 
+
+The values in the diagonal matrix \textbf{D} are the variance of each channel sorted into descending order. High values of $\lambda$ reveal high dynamics consequently high amount of information is unclosed into that respective subspaces. The last value of the diagonal is the variance of the channel with noise therefore the corresponding subspace is the most unrelated component. 
+
+In the orthogonal matrix D are concatenated the principal component also known as the dimension of the measurements sorted by their importance. From the BSS prospective these component are the original source to be linearly mixed with the mixing matrix \textbf{A}. 
+
+ICA on the other hand, tries to separate the sources by making them independently (i.e. the covariance matrix is diagonal). Independence is a stronger condition than uncorrelated. Signals are uncorrelated if their covariance is zero:
+
+\begin{equation}\label{equati1}
+E(y_{1}y_{2})-E(y_{1})E(y_{2})=0
+\end{equation}
+
+Signals are independent if their joined probability is equal the production of the respective probability:
+
+\begin{equation}\label{equati2}
+p(y_{1}y_{2})=p(y_{1})p(y_{2})
+\end{equation}
+
+Independence by default includes the uncorrelated condition whereas the other way around is not true. ICA does the decomposition yet consistently to the equation \ref{eq1} with minor differences.
+
+The general formulation is $X=MY+e$ where M is the mixing matrix whereas Y are the original (independent) sources to be estimated and \textbf{e} is the noise superimposed over the underlying model. 
+The main mathematical differences between ICA and PCA are listed below:
+
+\begin{itemize}
+    \item ICA works on non-Gaussian data whereas PCA on Gaussian data
+    \item ICA works on high order statistics whereas PCA on mean and variance.
+    \item ICA doesn't do the decomposition into orthogonal sources whereas PCA produces orthogonal estimated sources (ES).
+    \item ICA doesn't produces the scaling matrix from the decomposition. ICA doesn't ensure the correct scale of the ES. 
+    \item ICA does not ensure the correct ordering of the estimated sources whereas PCA does sort the ES.
+    \item ICA does not ensure the phase of the ES whereas PCA does ensure the ordering\cite{4}. 
+\end{itemize}
+
+Hereby a study comparative study is performed on two channels drawn from normal distribution. These channels are mixed linearly using two different mixing matrices A1 and A2 in \ref{A2}. The BSS is performed over different level of noise and it has been evaluated via signal to distortion ration SDR, signal to interference ration SIR and signal to artifact ration SAR \cite{6}. 
+
+PCA performance is quite insensitive to noise whereas ICA testifies an enhancement of the performance as the SNR values increases figure \ref{fig1} and \ref{fig2}. This is due to the fact that noise is always concatenated in large scale into the last subspace.  
+
+Additionally PCA performs a much better BSS compare to ICA according to the box plots in figure \ref{fig3}. This occurs due to Gaussianity distribution of the channel data which are not suitable for ICA. 
+
+The norm of the matrix A1 and A2 are respectively 3 and 21 that means a sufficient distance from the singularity. Consequently their inverse matrix does exist. In case the mixing matrix has a conditioning near to singularity its  inverse matrix would not exist therefore the BSS would not be possible. 
+
+\begin{figure}[!htbp]
+\foreach \i in {1,...,6} {
+    \begin{subfigure}[p]{0.5\textwidth}
+        \includegraphics[width=0.9\linewidth]{\i}
+    \end{subfigure}\quad
+}
+\caption{BSS evalution of PCA and ICA}\label{fig1}
+\end{figure}
+
+\begin{figure}[!htbp]
+\foreach \i in {7,...,12} {%
+    \begin{subfigure}[p]{0.5\textwidth}
+        \includegraphics[width=0.9\linewidth]{\i}
+    \end{subfigure}\quad
+}
+\caption{BSS evalution of PCA and ICA}\label{fig2}
+\end{figure}
+
+
+\begin{figure}[!htbp]
+\foreach \i in {15,...,17} {%
+    \begin{subfigure}[p]{0.33\textwidth}
+        \includegraphics[width=0.9\linewidth]{\i}
+    \end{subfigure}\quad
+}
+\caption{PCA vs ICA}\label{fig3}
+\end{figure}
+
+
+The correctness of the Fast-ICA has been tested with arbitrary waveform and the result could be found in \ref{A1}.

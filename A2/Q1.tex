@@ -1,0 +1,232 @@
+\section{Artifact removal for EEG data}
+
+
+Each neuron receives electrical signal from thousands other neurons, forming a complex network of billions of nodes. The electroencephalogram EEG measures the electrical field generated. The purpose is to help the detection and localization of lesions,  studying epilepsy behaviour, supporting the mental disorders, assisting in sleep patients and allowing the observation of brain response to stimulus. The electrodes accommodated into silver pads are orderly placed in the scalp. Muscles contraction introduces artifacts in the EEG measurement, thereby,  the interpretation of the encoded events becomes more complicated.  Canonical correlation analysis CCA is a proposed statistical method for suppression of artifact in the multichannel measurement. In order to solve this problem it could be studied as general blind source separation BSS. Herein the method assumes the mutual sources to be maximally uncorrelated among each other at the same time maximally individual autocorrelated \cite{18}. The measured signals  $X(t)=[x_{1}(t),x_{2}(t),\cdots,x_{K}(t)]^{T}$ with $t=1\cdots N$ with N the number of samples and K the number of sensors. Seen from the prospective of a cocktail party, the mixed signals are also assumed to be linear combination of the unknown sources $S(t)=[s_{1}(t),s_{2}(t),\cdots,s_{K}(t)]^{T}$. 
+\begin{equation}
+    {\bf X}(t)={\bf AS}(t)
+\end{equation}
+
+\textbf{A} is the mixing matrix which needs to be estimated via CCA in our case. The unmixing matrix is the $W=A^{-1}$. Apart from CCA an independent component analysis ICA will be implemented for the comparison study which also computes the mixing matrix. Once the unmixing matrix is obtained, the approximation of the desired signals can be computed via:
+
+\begin{equation}
+    Z(t)=WX(t)
+\end{equation}
+The mixing matrix is assumed to be matrix in these algorithms. 
+$X(t)$ is the data matrix to be proceeded via CCA with K mixtures and N samples. Y(t) is a delayed version of the observed data Y(t)=X(t-1). Considering a linear combination of X(t) and Y(t) as the \textit{u} and \textit{v} 
+
+
+\begin{figure}[!htbp]
+\minipage{0.5\textwidth}%
+\centering
+\begin{equation}
+    \mathbf{u=\omega_{x_1}x_1+\ldots+\omega_{x_K}x_K=w_x^T X}
+\end{equation}
+\endminipage\hfill
+\minipage{0.5\textwidth}%
+\centering
+\begin{equation}
+    \mathbf{v=\omega_{y_1}y_1+\ldots+\omega_{y_K}y_K=w_y^T Y}
+\end{equation}
+\endminipage\hfill
+\end{figure}
+
+
+CCA computes the weight vectors $w_{x}$ and $w_{y}$ that maximize the correlation between the \textbf{u} and \textbf{v} as bellow. 
+
+\begin{equation}
+    \underset{w_x, w_y}{max} \rho(\mathbf{u,v})=\frac{E\mathbf{[{uv}]}}{\sqrt{E\mathbf{[{u^2}]}E\mathbf{[{v^2}]}}}=\frac{E[(\mathbf{w_x^T X})(\mathbf{w_y^T Y})]}{\sqrt{E[(\mathbf{w_x^T X})(\mathbf{w_x^T X})]E[(\mathbf{w_y^T Y})(\mathbf{w_y^T Y})]}}=\frac{\mathbf{w_x^T C_{xy} w_y}}{\sqrt{(\mathbf{w_x^T C_{xx} w_x})(\mathbf{w_y^T C_{yy} w_y})}}
+\end{equation}
+
+In equation above $C_{xx}$ and $C_{yy}$ are the auto-covariance matrices of X and Y whereas $C_{xy}$ is the cross-covariance matrix. Derivating with respect to $w_{x}$ and $w_{y}$ and setting it to zero will give the system of equations:
+
+
+
+\begin{figure}[!htbp]
+\minipage{0.5\textwidth}%
+\centering
+\begin{equation}
+    C_{xx}^{-1}C_{xy}^{-1}C_{yy}^{-1}C_{yx}^{-1}=\rho w_{x}
+\end{equation}
+\endminipage\hfill
+\minipage{0.5\textwidth}%
+\centering
+\begin{equation}
+    C_{yy}^{-1}C_{yx}^{-1}C_{xx}^{-1}C_{xy}^{-1}=\rho w_{y}
+\end{equation}
+\endminipage\hfill
+\end{figure}
+
+Two different algorithms are developed for the solution of the equations \cite{16}: general eigenvalue problem (GEP) algorithm and computing the principal angles (PA) algorithm. Both of these are outlined in section \ref{ap1}. Herein the method to be implemented is PA algorithm.
+After running the CCA the outcome will be the mixing matrix and the CCA channels which are being sorted based on their autocorrelation scale (ACS). In order to maximize the autocorrelation on the reconstruction of the desired signal, the channels with low ACS are omitted one by one until the artefacts are removed. This step has to be guided visually for a high performance. 
+
+
+\subsection{Results}
+
+CCA was applied in two different dataset of EEG signals. In the first case the CCA channels with lowest ACS are omitted by visual selection and in the other case it is done automatically driven via a threshold value of ACS. The EEG data set are drafted in figures \ref{Nadya1} and \ref{Nadya2} and the respective CCA channels via PA algorithm are listed in figures \ref{Nadya3} and \ref{Nadya4}.
+In the first dataset the artefact (high frequency oscillation) are mostly presented int he channel, 2, 3, 13 and 14 figure \ref{Nadya2}. On the other hand in the second dataset the artefact are mostly presented at high level in the channels 4, 8, 11 and 12 in figure \ref{Nadya2}. Herein the CCA channels are sorted from the highest to the lowest ACS where it is testified by the scale of artefact associated in the last channels in figures \ref{Nadya3} and \ref{Nadya4}. In figures \ref{Nadya5} and \ref{Nadya8} are the values for respective CCA channels for each dataset sorted into a ascending order. 
+
+ In order to perform the BSS, CCA channels with the lowest ACS are removed one by one until the artefacts are successfully vanished. CCA channels are concatenated into the matrix \textbf{X(t)} and the corresponding demixing coefficients are accommodated into the matrix \textbf{W}. Removal of a CCA channel which is a row in \textbf{X(t)} is associated with the removal of its respective column from \textbf{W} in order to perform the reconstruction. The outcome of the CCA for consecutive channel removal are listed in sections \ref{CCA1} and \ref{CCA2} for the first and the second dataset. The final results of respective dataset are listed in figures \ref{Nadya6} and \ref{Nadya7}. Decision regarding the removal of the CCA channels is done by visual perception of the artefact presented into the EEG signals after reconstruction. If the channel still contains considerable artefact, the following CCA channel with the lowest ACS value is removed until our visual perception if satisfied with the outcome of the BSS-CCA.
+
+Apart from manual execution, ACS values could be utilized for a manual execution of the CCA algorithm. Herein all the channel data where their respective ACS is smaller than a certain value threshold will be omitted. This implementation is very sensitive to the threshold value since it really affects on the amount of artefact being removed. In the dataset for EEG1 and EEG2 the CCA algorithm is run by removing automatically all the CCA channels where their respective ACS is smaller than $75\%$. The results are also listed in section \ref{CCA1} and \ref{CCA2}.
+
+The two dataset reveal different scale of distortion.The first dataset has a relatively lower distortion associated with them compare to the second dataset. This is testified from the number of iteration required by both manual and automated CCA. Additionally CCA fails to remove some of the artefacts which residue in the EEG channels. This are mostly high frequency oscillation in channels 21 and 14 for the first dataset and in the channels 8, 12 in the second dataset figure \ref{Perfor}. Furthermore the via visual perception the scale of the artefact residue is higher in the second dataset compare to the first dataset. This is also outlined with the box-plots of source to artefact ration (SAR) and source to distortion ration (SDR) in the figure \ref{Perfor1}.
+
+
+The result arising from automated and manual CCA does not appear to be dramatically different. Via visual perception the performance appears to be slightly different with higher artefact in the second dataset for the manual version in the 8-th channel \ref{Nadya7}. These implementation infers that a fully automated CCA with more sophisticated decision making is very much feasible. The critical decision rely uniquely on the number of CCA channels being omitted.
+
+Event though the number of the CCA channels being removed manual version does not outperform the BSS compare to the automated version. Performance of both these method is also testified with the box-plots in figure \ref{Perfor2} where the BSS is performed over the first dataset only for this comparison.
+
+
+\subsection{ICA implementation}
+Furthermore, CCA is being compared with independent component analysis ICA which also is a competitive candidate for BSS. ICA has many different implementation, however, in this case Fast-ICA for multiple unit estimation is being deployed \cite{15}. The flowchart of the algorithm is outlined in the section \ref{ap3}. ICA differently from CCA has a critical condition for the data set, namely they have to have non-Gaussianity nature. This has many different manners for the evaluation where the most straightforward would be kurtosis. Data-set is supposed to have Gaussian nature for zero values, sub-Gaussian for negative values and super-Gaussian for positive values. The graphs in figures \ref{Kurtosis1} and \label{Kurtosis2} testify that the signals have a super-Gaussian nature. A drawback associated with the kurtosis is its sensitivity to the outlier, consequently, it is not a robust method. Before applying ICA, two pre-processing steps take place for the dataset, including here centering (figure \ref{center1} and \ref{center2}) and whitening of the data set (figure \ref{whited1} and \ref{whited2}). After running the algorithm, the separated sources are listed in figures \ref{BSS1} and \ref{BSS2} for the first and the second dataset respectively. In order to observe the nature of the signal before and after ICA, the histograms of the dataset are plotted respectively to each dataset. In figures \ref{HIST1} and \ref{HIST2} are the histograms before ICA being applied whereas in figures \ref{HIST3} and \ref{HIST4} are the histograms sources after separating them. 
+
+
+\begin{figure}[!htbp]
+\minipage{0.5\textwidth}%
+\centering
+\includegraphics[width=1\textwidth]{35.jpg}
+\includegraphics[width=1\textwidth]{721.jpg}
+\subcaption{BSS for the dataset EEG1}\label{Nadya6}
+\endminipage\hfill
+\minipage{0.5\textwidth}%
+\centering
+\includegraphics[width=1\textwidth]{81.jpg}
+\includegraphics[width=1\textwidth]{761.jpg}
+\subcaption{BSS for the dataset EEG2}\label{Nadya7}
+\endminipage\hfill
+\caption{EEG final results}\label{Perfor}
+\end{figure}
+
+
+\begin{figure}[!htbp]
+\minipage{0.5\textwidth}%
+\centering
+\includegraphics[width=1\textwidth]{82.jpg}
+\subcaption{SDR}\label{SAR}
+\endminipage\hfill
+\minipage{0.5\textwidth}%
+\centering
+\includegraphics[width=1\textwidth]{83.jpg}
+\subcaption{SAR}\label{SDR}
+\endminipage\hfill
+\caption{BSS performance of the two dataset}\label{Perfor1}
+\end{figure}
+
+\begin{figure}[!htbp]
+\minipage{0.5\textwidth}%
+\centering
+\includegraphics[width=1\textwidth]{84.jpg}
+\subcaption{SDR}\label{SAR}
+\endminipage\hfill
+\minipage{0.5\textwidth}%
+\centering
+\includegraphics[width=1\textwidth]{85.jpg}
+\subcaption{SAR}\label{SDR}
+\endminipage\hfill
+\caption{BSS performance of automated vs manual CCA}\label{Perfor2}
+\end{figure}
+
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.48\textwidth]{BSS_Performance.jpg}
+    \caption{Caption}
+    \label{BSSPerformance}
+\end{figure}
+
+
+Both CCA and ICA perform BSS upon different underlying goals and to compare these methods, root-mean-square-error RMSE has been chosen to evaluate the performance of each. CCA clearly outperforms ICA for different levels of \textbf{wgn} contaminating the channels. This is evidenced in figure \ref{BSSPerformance}. Whereas an arbitrary waveform (mixture of signals) is being utilized for testing the correctness of the ICA in \ref{Test}
+
+\begin{figure}[!htbp]
+\minipage{0.5\textwidth}%
+\centering
+{\includegraphics[width=1\textwidth]{2.jpg}};
+\subcaption{First data set}\label{Nadya1}
+\includegraphics[width=1\textwidth]{5.jpg}
+\subcaption{ACS for the dataset EEG1}\label{Nadya5}
+\includegraphics[width=1\textwidth]{3.jpg}
+\subcaption{EEG1 CCA channels}\label{Nadya4}
+\endminipage\hfill
+\minipage{0.5\textwidth}%
+\centering
+\includegraphics[width=1\textwidth]{1.jpg}
+\subcaption{Second data set}\label{Nadya2}
+\includegraphics[width=1\textwidth]{7.jpg}
+\subcaption{ACS for the dataset EEG2}\label{Nadya8}
+\includegraphics[width=1\textwidth]{4.jpg}
+\subcaption{EEG2 CCA channels}\label{Nadya3}
+\endminipage\hfill
+\caption{EEG dataset}
+\end{figure}
+
+
+
+\begin{figure}[!htbp]
+\minipage{0.5\textwidth}%
+\centering
+\includegraphics[width=1\textwidth]{500.jpg}
+\subcaption{Kurtosis for EEG1}\label{Kurtosis1}
+\includegraphics[width=1\textwidth]{503.jpg}
+\subcaption{EEG1 centered}\label{center1}
+\includegraphics[width=1\textwidth]{504.jpg}
+\subcaption{EEG1 whited}\label{whited1}
+\endminipage\hfill
+\minipage{0.5\textwidth}%
+\centering
+\includegraphics[width=1\textwidth]{501.jpg}
+\subcaption{Kurtosis for EEG2}\label{Kurtosis2}
+\includegraphics[width=1\textwidth]{509.jpg}
+\subcaption{EEG2 centered}\label{center2}
+\includegraphics[width=1\textwidth]{510.jpg}
+\subcaption{EEG2 whited}\label{whited2}
+\endminipage\hfill
+\caption{ICA preprocessing data}
+\end{figure}
+
+
+
+\begin{figure}[!htbp]
+\minipage{0.5\textwidth}%
+\centering
+\includegraphics[width=1\textwidth]{505.jpg}
+\subcaption{BSS of the EEG1}\label{BSS1}
+\includegraphics[width=1\textwidth]{506.jpg}
+\subcaption{EEG1 hist before ICA}\label{HIST1}
+\includegraphics[width=1\textwidth]{507.jpg}
+\subcaption{EEG1 hist before ICA}\label{HIST3}
+\endminipage\hfill
+\minipage{0.5\textwidth}%
+\centering
+\includegraphics[width=1\textwidth]{511.jpg}
+\subcaption{BSS of the EEG2}\label{BSS2}
+\includegraphics[width=1\textwidth]{512.jpg}
+\subcaption{EEG1 hist before ICA}\label{HIST2}
+\includegraphics[width=1\textwidth]{513.jpg}
+\subcaption{EEG1 hist before ICA}\label{HIST4}
+\endminipage\hfill
+\caption{EEG dataset}
+\end{figure}
+
+
+
+\newpage
+\subsection{Differences between CCA and ICA}
+
+
+\begin{itemize}
+
+\item CCA performs the BSS much better than ICA which is testified with the RMSE performance plot for different noise levels.
+
+\item CCA is straight forward implemented, meaning that there is no need to iteratively solve or optimize any parameter. Whereas ICA employees an iterative method for the separation of sources by maximizing their non-Gaussianity \cite{15}. Consequently, it requires much higher time complexity compared to CCA. CCA employs matrix decomposition at a single iteration.  
+
+\item Via ICA-BSS there is no guarantee for the same output for identical data contrary to the CCA, which can reproduce the data for the same input. This is mainly due to the fact that ICA outcome depends on the number of iterations and the input parameters\cite{16}. It means that outcome arises at one iteration. The outcome of the ICA strictly depends on the data set values meaning that optimization process and the number of iteration has a certain variability. 
+
+\item Even though both of the methods try to separate the sources, the consideration is different in both cases. CCA tries to make the sources as less uncorrelated as possible and maximize the autocorrelation of channels whereas ICA tries to make the sources as less independent as possible. Statistically speaking, independence is far stronger than uncorrelatedness. meaning that independence implies the uncorrelatedness whereas the other way around does not stand. In other words, uncorrelatedness is just an instance of independence\cite{15}. 
+
+\item Differently from the CCA case, ICA assumes the input data set to be full non-Gaussian\cite{15}. Even though natural events rarely contradict with the central limit theory CLT, in some biomedical signal in particular non-Gaussianity is still no prevalent. CCA does not depend on this assumption, thereby it performs the separation at any type signals which are non correlated.
+
+\item ICA in addition requires pre-processing  of the data, including here centering and whitening of the data\cite{15}. CCA does the separation straight from the raw data without the need of any pre-processing. Despite the pre-processing incorporated into the ICA, yet the method tends to be reluctant to the robustness due to the assumption of neg-entropy and kurtosis estimation for the non-Gaussianity \cite{17}. 
+
+\item Auto-correlation is a well defined method, thereby the correlation coefficients between the sources to be proceeded are defined very accurately in a very robust manner. The outcome is afterwards linearly processed with the aim of a separation of the sources. Whereas in the ICA, independence remains solid in multiple prospective.  
+
+\end{itemize}

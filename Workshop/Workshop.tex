@@ -1,0 +1,147 @@
+\documentclass[a4paper]{article}
+\usepackage{fancyhdr}
+\usepackage[pdftex]{graphicx}
+\usepackage{sidecap}
+\usepackage{listings}
+\usepackage{color}
+\usepackage[export]{adjustbox}
+\usepackage{subcaption}
+
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta, 
+    urlcolor=cyan,
+    bookmarks=true,
+    pdfpagemode=FullScreen,
+}
+\usepackage{geometry}
+ \geometry{
+ a4paper,
+ total={210mm,297mm},
+ left=20mm,
+ right=20mm,
+ top=20mm,
+ bottom=20mm,
+ }
+
+\usepackage{glossaries}
+
+
+\makeglossaries
+\newglossaryentry{FSM}
+{
+    name=FSM,
+    description={Finite State Machine}
+}
+
+\definecolor{mygreen}{RGB}{25,172,0} % color values Red, Green, Blue
+\definecolor{mylilas}{RGB}{170,55,241}
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{Vangjush Komini}
+\lhead{KU Leuven}
+\rfoot{Page \thepage}
+\lfoot{Biomedical Data Processing part 2}
+
+
+\graphicspath{{ImagesWorkshop/}}
+
+\include{Glossary}
+
+
+\begin{titlepage}
+
+\title{\centerline{\textit{Worshop report}} }
+
+\author{\textbf{\textit{Multimodel Signal Processing}}\\
+\href{mailto:vangjush.komini@uzleuven.be}{Vangjush Komini}\\  \textit{r0612470} \\
+\href{mailto:vangjush.komini@uzleuven.be}{vangjush.komini@uzleuven.be}\\
+}
+
+
+
+
+
+\end{titlepage}
+
+
+
+
+\begin{document}
+
+
+
+\maketitle
+\begin{center}
+\Large \href{https://onderwijsaanbod.kuleuven.be/syllabi/e/H06W1AE.htm#activetab=doelstellingen_idp41200}{Biomedical Data Processing, Part II Course}
+\end{center}
+
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=0.4\textwidth]{icon1.png}
+\end{figure}
+
+
+
+\newpage
+
+\section{Review}
+
+
+
+Biomedical signal processing is utilized in clinics for disease diagnosis, risk assessment, patient monitoring and minimal invasive therapy. Biological events in the real world are associated with a highly complex interaction of distinct mechanisms. These mechanisms are physiological phenomena which act simultaneously and mutually coupled at every instant of time. The outcome is an integration of all these physiological events projected differently upon separate anomalies. High blood pressure, for instance, occurs as a result of various contributions from high cholesterol in the blood, stress, obesity \cite{1}. On the other hand, stress and obesity have different scale of impact to diabetes as compared to nutrition\cite{2}. These multi-modal signals inherently sustain cross-correlation since they are responsible for common phenomena. Another common feature is their \textit{non-linearity relation}, \textit{multivariate} and \textit{non-stationarity} \cite{3}. This implies that variations in one of the systemic variables produces a cascade
+of reactions that will affect the other variables as well.
+
+Consequently, a signal processing framework, being capable of considering different modalities simultaneously, could provide much more insight in depth as compared to the independent processing of the modalities \cite{3}. The advantage of multimodality is mainly due to the ability to reveal information which is otherwise hidden when distinct modalities are considered. Common dynamics processing of heterogeneous sources of a signal is the very main advantage of multimodal signal processing. 
+
+Another big contribution to multimodal framework is the high fidelity of bio-sensors being developed recently. Their sensitivity has been improved drastically and these sensors are more capable of acquiring enormous amount of biomedical signals. The newly developed sensors could measure signals of electrical and non-electrical origin invasively or non-invasively, providing highly qualitative input signals to the multimodal framework. Near Infrared spectroscopy is widely used together with bio-impedance spectroscope to assess the glucose level in real-time via multimodal framework. This will soon be embedded into hand watch for diabetic patients \cite{4}.
+
+Even though significant contribution has already been made via mathematical, physiological and physical prospects, yet there are severe drawback associated with multimodal framework.
+
+Metabolism is inherently multivariate, meaning that the change of one parameter will induce linear and nonlinear changes to a cascade of other parameters. This will therefore complicate interpretation of different modalities when it comes to designing the algorithm. Additionally, not comprehensive conclusion could be made for the nonlinear parameters from the physiological prospective. Thereby, at the moment there is a lack of robust preprocessing algorithm. It can be noticed in a specific example, when assessing the Cerebral Autoregulation (CA) in neonates has been studied in \cite{3}. Despite the fact how important this assessment is, it is not yet fully understood how all the underlying mechanisms affect CA. Additionally, there is not preprocessing algorithm capable of nulling the effect of outliers (i.e. stress affect in the heart rate) and decoupling the influence of other signals (i.e. variation of $SaO_{2}$ compromises the NIRS).  
+
+
+Another important aspect of technology on health is their clinical validation. In many cases, it is very hard to obtain a ground truth standard of particular biological phenomena. In that sense the outcome of multimodal framework does not provide any scale of accuracy without the gold standard comparison. Therefore, it is hard to reliably assess any physiological parameters.
+
+On the other hand, the usage of active sensing, where heterogeneous signals (electrical, magnetic, optical, acoustic) are induced, simultaneously produces a cross modulation of the biological activities to be measured. This is nonlinear "cocktail party" is not always easy to be deciphered into mathematical equations. The usage of NIRS and bio-impedance shares a lot of common features interrelated with high non-linearity. Their usage for tissue characterisation requires a nonlinear multivariate framework which is not developed yet. The importance of nonlinear multivariate methods is the ability to assess the contribution of each variable independently and jointly. 
+
+
+Additionally, parametric methods, being employed in different benchmark of multimodal algorithms, deserve important attention. Parameter tuning is not always a solution since human metabolism is highly distinct among humans. Using tuned parameter over many patients introduces a bias estimation. This bias is not very easy to be estimated and incorporated into the multimodal framework. 
+
+Despite these drawbacks listed above and potentially many others to be known, multimodal framework possesses superior advantages compare to single modal cases. 
+
+It has dramatically facilitate the mining of many modalities  such as ECG , EEG \cite{5}. EEG is intrinsically open to many different artefacts and other biological influences. However, this obstacles has been efficiently tackled via multimodality. Namely, brain activities have been disclosed by suppression the background effects. Similar method have also been applied in spectroscopy where it was possible to estimate the content of a particular tissue significantly better via fusion of acoustic optical spectroscopy. A start-up base company\footnote{https://www.consumerphysics.com/} in Isreal using NIRS to also assess the content of food (c.f. calories, vitamins) using multimodal signal processing. 
+
+
+Via multimodal framework it has been possible to monitor the interaction of different biological phenomena. The impact of epilepsy in cardio-respiratory is possible to be qualitatively studied via multimodal framework. This and many other cross-related biological events wouldn't have been possible without the usage of multimodal framework. 
+
+
+The other very important application of multimodal framework is imaging. Heterogeneous image fusion has improved the diagnoses of many anomalies. Differently from signal processing, multimodal imaging is significantly easier to be processed since their outcome could be validated and interpreted visually. Additionally, different signal modalities have also been employed in guiding the different image modalities. ECG could easily guide the ultrasound imaging of heart whereby the speed of acquisition is accelerated. 
+
+Moreover, multimodal imaging is easier to fuse since there is not need for highly complicated mathematical modelling of the images and their content is much easier to be interpreted as compared to signals. It is very easy to PET and MRI image fusion since their physical operation is perfectly understood and the outcome after fusion is much more comfortable than treating them alone. Epileptic seizures occur at different parts of the brain, however, their precise localisation is very hard to be estimated. Nevertheless, the recent development has shown that combining different images modalities enables the much more accurate volumetric rendering of the seizure. Similar application could also be found in tumor diagnoses wherein precise location and size of the tumor is now much easier to find via multimodal imaging.
+
+Multimodal framework is not yet a tool to be used since many challenges are yet to be sorted out. Despite the numerous difficulties in applying multimodal methods, the ongoing research has shown promising results in different applications. Capabilities of multimodal framework are irreplaceable and the future in signal processing belongs to multimodality.  
+
+
+
+
+
+
+\clearpage
+\appendix
+
+
+\newpage
+\bibliographystyle{unsrt}
+\bibliography{BibWork}
+
+
+
+\end{document}
+

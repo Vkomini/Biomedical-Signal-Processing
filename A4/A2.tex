@@ -1,0 +1,67 @@
+\section{Inverse problem appendix}
+\subsection{Formulas}
+
+\begin{equation}\label{equation_1}
+    DLE=\sqrt{(x_{orig}-x_{est})^2-(y_{orig}-y_{est})^2-(z_{orig}-z_{est})^2}
+\end{equation}
+
+
+\begin{equation}\label{equation_2}
+    DOE=arccos\bigg\{\frac{Or_x_{orig}*x_{est}+Or_y_{orig}*y_{est}+Or_z_{orig}*Or_z_{est}}{\sqrt{Or_x_{est}^2-Or_y_{est}^2-Or_z_{est}^2}*\sqrt{Or_x_{orig}^2-Or_y_{orig}^2-Or_z_{orig}^2}}\bigg\}
+\end{equation}
+
+
+Spherical coordinate for the electrode displacement:
+\begin{equation}\label{equation_3}
+    Angle=\frac{360*Displacement}{2*\pi*Radius}
+\end{equation}
+
+
+
+\subsection{Skull conductivity measurement}
+
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=0.4\textwidth]{SkullConductivity.jpg}
+    \caption{Skull conductivity measurement\cite{4}}\label{new_label2}
+\end{figure}
+
+\newpage
+\subsection{Skull conductivity error plots}
+
+
+\begin{figure}[!htbp]
+\foreach \i in {110,...,119} {%
+    \begin{subfigure}[p]{0.5\textwidth}
+        \includegraphics[width=0.7\linewidth]{\i}
+    \end{subfigure}\quad
+}
+\end{figure}
+
+\begin{figure}[!htbp]
+\foreach \i in {120,...,129} {%
+    \begin{subfigure}[p]{0.5\textwidth}
+        \includegraphics[width=0.7\linewidth]{\i}
+    \end{subfigure}\quad
+}
+\end{figure}
+
+\newpage
+\subsection{Electrode misplacement error plots}
+
+
+\begin{figure}[!htbp]
+\foreach \i in {200,...,209} {%
+    \begin{subfigure}[p]{0.5\textwidth}
+        \includegraphics[width=0.64\linewidth]{\i}
+    \end{subfigure}\quad
+}
+\end{figure}
+
+\begin{figure}[!htbp]
+\foreach \i in {210,...,219} {%
+    \begin{subfigure}[p]{0.5\textwidth}
+        \includegraphics[width=0.64\linewidth]{\i}
+    \end{subfigure}\quad
+}
+\end{figure}

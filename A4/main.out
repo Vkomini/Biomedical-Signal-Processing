@@ -1,0 +1,31 @@
+\BOOKMARK [1][-]{section.1}{Introduction}{}% 1
+\BOOKMARK [1][-]{section.2}{Forward problem}{}% 2
+\BOOKMARK [2][-]{subsection.2.1}{Theory}{section.2}% 3
+\BOOKMARK [3][-]{subsubsection.2.1.1}{Poisson's equation}{subsection.2.1}% 4
+\BOOKMARK [3][-]{subsubsection.2.1.2}{Boundary conditions}{subsection.2.1}% 5
+\BOOKMARK [3][-]{subsubsection.2.1.3}{The current dipole}{subsection.2.1}% 6
+\BOOKMARK [3][-]{subsubsection.2.1.4}{Solution of the forward problem}{subsection.2.1}% 7
+\BOOKMARK [2][-]{subsection.2.2}{EEG montage}{section.2}% 8
+\BOOKMARK [2][-]{subsection.2.3}{Dipole location}{section.2}% 9
+\BOOKMARK [3][-]{subsubsection.2.3.1}{Potential computation}{subsection.2.3}% 10
+\BOOKMARK [2][-]{subsection.2.4}{Lead Field Matrix}{section.2}% 11
+\BOOKMARK [2][-]{subsection.2.5}{Linearity of Maxwell equation}{section.2}% 12
+\BOOKMARK [2][-]{subsection.2.6}{EEG time series generation}{section.2}% 13
+\BOOKMARK [1][-]{section.3}{Inverse problem}{}% 14
+\BOOKMARK [2][-]{subsection.3.1}{Estimation of a dipole using a single time instance}{section.3}% 15
+\BOOKMARK [2][-]{subsection.3.2}{Estimation of a dipole using the simulated EEG}{section.3}% 16
+\BOOKMARK [2][-]{subsection.3.3}{Error due to not incorporating a malfunctioning electrode}{section.3}% 17
+\BOOKMARK [2][-]{subsection.3.4}{Error by different conductivity of the tissues}{section.3}% 18
+\BOOKMARK [2][-]{subsection.3.5}{Inverse problem with electrode position altered}{section.3}% 19
+\BOOKMARK [1][-]{appendix.A}{Forward problem appendix}{}% 20
+\BOOKMARK [2][-]{subsection.A.1}{Head models}{appendix.A}% 21
+\BOOKMARK [2][-]{subsection.A.2}{The Potential of a General Dipole}{appendix.A}% 22
+\BOOKMARK [1][-]{appendix.B}{Inverse problem appendix}{}% 23
+\BOOKMARK [2][-]{subsection.B.1}{Formulas}{appendix.B}% 24
+\BOOKMARK [2][-]{subsection.B.2}{Skull conductivity measurement}{appendix.B}% 25
+\BOOKMARK [2][-]{subsection.B.3}{Skull conductivity error plots}{appendix.B}% 26
+\BOOKMARK [2][-]{subsection.B.4}{Electrode misplacement error plots}{appendix.B}% 27
+\BOOKMARK [1][-]{appendix.C}{Main code session}{}% 28
+\BOOKMARK [2][-]{subsection.C.1}{First part}{appendix.C}% 29
+\BOOKMARK [2][-]{subsection.C.2}{Second part}{appendix.C}% 30
+\BOOKMARK [2][-]{subsection.C.3}{Aid functions}{appendix.C}% 31

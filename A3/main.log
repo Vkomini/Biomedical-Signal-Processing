@@ -1,0 +1,1395 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.8.23)  25 AUG 2016 20:52
+entering extended mode
+**./main.tex
+(main.tex
+LaTeX2e <2016/03/31> patch level 3
+Babel <3.9r> and hyphenation patterns for 75 language(s) loaded.
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\article.cls"
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\size10.clo"
+File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\fancyhdr\fancyhdr.sty"
+\fancy@headwidth=\skip43
+\f@ncyO@elh=\skip44
+\f@ncyO@erh=\skip45
+\f@ncyO@olh=\skip46
+\f@ncyO@orh=\skip47
+\f@ncyO@elf=\skip48
+\f@ncyO@erf=\skip49
+\f@ncyO@olf=\skip50
+\f@ncyO@orf=\skip51
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+Package: graphics 2016/07/10 v1.0t Standard LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 99.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics-def\pdftex.def"
+File: pdftex.def 2016/07/10 v0.06j Graphics/color for pdfTeX
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count87
+))
+\Gin@req@height=\dimen103
+\Gin@req@width=\dimen104
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\sidecap\sidecap.sty"
+Package: sidecap 2003/06/06 v1.6f SideCap Package (RN/HjG)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ifthen.sty"
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+\SC@BOXWD=\dimen105
+\SC@CAPWD=\dimen106
+\SC@tempdima=\dimen107
+\SC@tempdimb=\dimen108
+\c@SC@C=\count88
+\SC@BOX=\box26
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\listings.sty"
+\lst@mode=\count89
+\lst@gtempboxa=\box27
+\lst@token=\toks15
+\lst@length=\count90
+\lst@currlwidth=\dimen109
+\lst@column=\count91
+\lst@pos=\count92
+\lst@lostspace=\dimen110
+\lst@width=\dimen111
+\lst@newlines=\count93
+\lst@lineno=\count94
+\lst@maxwidth=\dimen112
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstmisc.sty"
+File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
+\c@lstnumber=\count95
+\lst@skipnumbers=\count96
+\lst@framebox=\box28
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\listings.cfg"
+File: listings.cfg 2015/06/04 1.6 listings configuration
+))
+Package: listings 2015/06/04 1.6 (Carsten Heinz)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\color.sty"
+Package: color 2016/07/10 v1.1e Standard LaTeX Color (DPC)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\color.cfg"
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package color Info: Driver file: pdftex.def on input line 147.
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\adjustbox\adjustbox.sty"
+Package: adjustbox 2012/05/21 v1.0 Adjusting TeX boxes (trim, clip, ...)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\xkeyval\xkeyval.sty"
+Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\xkeyval\xkeyval.tex"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\xkeyval\xkvutils.tex"
+\XKV@toks=\toks16
+\XKV@tempa@toks=\toks17
+)
+\XKV@depth=\count97
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\adjustbox\adjcalc.sty"
+Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back
+-ends (calc, etex, pgfmath)
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\adjustbox\trimclip.sty"
+Package: trimclip 2012/05/16 v1.0 Trim and clip general TeX material
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\collectbox\collectbox.sty"
+Package: collectbox 2012/05/17 v0.4b Collect macro arguments as boxes
+\collectedbox=\box29
+)
+\tc@llx=\dimen113
+\tc@lly=\dimen114
+\tc@urx=\dimen115
+\tc@ury=\dimen116
+Package trimclip Info: Using driver 'tc-pdftex.def'.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\adjustbox\tc-pdftex.def"
+File: tc-pdftex.def 2012/05/13 v1.0 Clipping driver for pdftex
+))
+\adjbox@Width=\dimen117
+\adjbox@Height=\dimen118
+\adjbox@Depth=\dimen119
+\adjbox@Totalheight=\dimen120
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ifoddpage\ifoddpage.sty"
+Package: ifoddpage 2016/04/23 v1.1 Conditionals for odd/even page detection
+\c@checkoddpage=\count98
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ltxmisc\varwidth.sty"
+Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
+\@vwid@box=\box30
+\sift@deathcycles=\count99
+\@vwid@loff=\dimen121
+\@vwid@roff=\dimen122
+))
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\caption\subcaption.sty"
+Package: subcaption 2016/05/22 v1.1-161 Sub-captions (AR)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\caption\caption.sty"
+Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\caption\caption3.sty"
+Package: caption3 2016/05/22 v1.7-166 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 67.
+\captionmargin=\dimen123
+\captionmargin@=\dimen124
+\captionwidth=\dimen125
+\caption@tempdima=\dimen126
+\caption@indent=\dimen127
+\caption@parindent=\dimen128
+\caption@hangindent=\dimen129
+)
+\c@ContinuedFloat=\count100
+Package caption Info: listings package is loaded.
+Package caption Info: sidecap package is loaded.
+)
+\c@subfigure=\count101
+\c@subtable=\count102
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\filecontents\filecontents.sty"
+Package: filecontents 2011/10/08 v1.3 Create an external file from within a LaT
+eX document
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\pgf\utilities\pgffor.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\pgf\utilities\pgfrcs.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\utilities\pgfutil-common.te
+x"
+\pgfutil@everybye=\toks18
+\pgfutil@tempdima=\dimen130
+\pgfutil@tempdimb=\dimen131
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\utilities\pgfutil-common-li
+sts.tex"))
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\utilities\pgfutil-latex.def
+"
+\pgfutil@abb=\box31
+ ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ms\everyshi.sty"
+Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
+))
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\utilities\pgfrcs.code.tex"
+Package: pgfrcs 2015/08/07 v3.0.1a (rcs-revision 1.31)
+)) ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\pgf\utilities\pgfkeys.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\utilities\pgfkeys.code.tex"
+\pgfkeys@pathtoks=\toks19
+\pgfkeys@temptoks=\toks20
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\utilities\pgfkeysfiltered.c
+ode.tex"
+\pgfkeys@tmptoks=\toks21
+))) ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\pgf\math\pgfmath.sty" ("C:\Pr
+ogram Files (x86)\MiKTeX 2.9\tex\generic\pgf\math\pgfmath.code.tex"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\math\pgfmathcalc.code.tex"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\math\pgfmathutil.code.tex"
+\pgf@x=\dimen132
+\pgf@xa=\dimen133
+\pgf@xb=\dimen134
+\pgf@xc=\dimen135
+\pgf@y=\dimen136
+\pgf@ya=\dimen137
+\pgf@yb=\dimen138
+\pgf@yc=\dimen139
+\c@pgf@counta=\count103
+\c@pgf@countb=\count104
+\c@pgf@countc=\count105
+\c@pgf@countd=\count106
+) ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\math\pgfmathparser.code.t
+ex"
+\pgfmath@dimen=\dimen140
+\pgfmath@count=\count107
+\pgfmath@box=\box32
+\pgfmath@toks=\toks22
+\pgfmath@stack@operand=\toks23
+\pgfmath@stack@operation=\toks24
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.code.
+tex"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.basic
+.code.tex")
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.trigo
+nometric.code.tex")
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.rando
+m.code.tex")
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.compa
+rison.code.tex")
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.base.
+code.tex")
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.round
+.code.tex")
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.misc.
+code.tex")
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.integ
+erarithmetics.code.tex")))
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfloat.code.tex"
+\c@pgfmathroundto@lastzeros=\count108
+)))
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\utilities\pgffor.code.tex"
+Package: pgffor 2013/12/13 v3.0.1a (rcs-revision 1.25)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\math\pgfmath.code.tex")
+\pgffor@iter=\dimen141
+\pgffor@skip=\dimen142
+\pgffor@stack=\toks25
+\pgffor@toks=\toks26
+))
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\forloop\forloop.sty"
+Package: forloop 2006/09/18 v3.0 For Loops for LaTeX
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty"
+Package: amsmath 2016/06/28 v2.15d AMS math features
+\@mathmargin=\skip52
+
+For additional information on amsmath, use the `?' option.
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amstext.sty"
+Package: amstext 2000/06/29 v2.01 AMS text
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty"
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks27
+\ex@=\dimen143
+))
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty"
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen144
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty"
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count109
+LaTeX Info: Redefining \frac on input line 199.
+\uproot@=\count110
+\leftroot@=\count111
+LaTeX Info: Redefining \overline on input line 297.
+\classnum@=\count112
+\DOTSCASE@=\count113
+LaTeX Info: Redefining \ldots on input line 394.
+LaTeX Info: Redefining \dots on input line 397.
+LaTeX Info: Redefining \cdots on input line 518.
+\Mathstrutbox@=\box33
+\strutbox@=\box34
+\big@size=\dimen145
+LaTeX Font Info:    Redeclaring font encoding OML on input line 634.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 635.
+\macc@depth=\count114
+\c@MaxMatrixCols=\count115
+\dotsspace@=\muskip10
+\c@parentequation=\count116
+\dspbrk@lvl=\count117
+\tag@help=\toks28
+\row@=\count118
+\column@=\count119
+\maxfields@=\count120
+\andhelp@=\toks29
+\eqnshift@=\dimen146
+\alignsep@=\dimen147
+\tagshift@=\dimen148
+\tagwidth@=\dimen149
+\totwidth@=\dimen150
+\lineht@=\dimen151
+\@envbody=\toks30
+\multlinegap=\skip53
+\multlinetaggap=\skip54
+\mathdisplay@stack=\toks31
+LaTeX Info: Redefining \[ on input line 2739.
+LaTeX Info: Redefining \] on input line 2740.
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\amssymb.sty"
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.sty"
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\lineno\lineno.sty"
+Package: lineno 2005/11/02 line numbers on paragraphs v4.41
+\linenopenalty=\count121
+\output=\toks32
+\linenoprevgraf=\count122
+\linenumbersep=\dimen152
+\linenumberwidth=\dimen153
+\c@linenumber=\count123
+\c@pagewiselinenumber=\count124
+\c@LN@truepage=\count125
+\c@internallinenumber=\count126
+\c@internallinenumbers=\count127
+\quotelinenumbersep=\dimen154
+\bframerule=\dimen155
+\bframesep=\dimen156
+\bframebox=\box35
+LaTeX Info: Redefining \\ on input line 3056.
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\hyperref.sty"
+Package: hyperref 2016/06/24 v6.83q Hypertext links for LaTeX
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\hobsub-hyperref.sty"
+Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
+
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\hobsub-generic.sty"
+Package: hobsub-generic 2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)
+Package hobsub Info: Skipping package `infwarerr' (already loaded).
+Package hobsub Info: Skipping package `ltxcmds' (already loaded).
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+Package: intcalc 2016/05/16 v1.2 Expandable calculations with integers (HO)
+Package: ifpdf 2016/05/14 v3.1 Provides the ifpdf switch
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+Package: pdftexcmds 2016/05/21 v0.22 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+Package: pdfescape 2016/05/16 v1.14 Implements pdfTeX's escape features (HO)
+Package: bigintcalc 2016/05/16 v1.4 Expandable calculations on big integers (HO
+)
+Package: bitset 2016/05/16 v1.2 Handle bit-vector datatype (HO)
+Package: uniquecounter 2016/05/16 v1.3 Provide unlimited unique counter (HO)
+)
+Package hobsub Info: Skipping package `hobsub' (already loaded).
+Package: letltxmacro 2016/05/16 v1.5 Let assignment for LaTeX macros (HO)
+Package: hopatch 2016/05/16 v1.3 Wrapper for package hooks (HO)
+Package: xcolor-patch 2016/05/16 xcolor patch
+Package: atveryend 2016/05/16 v1.9 Hooks at the very end of document (HO)
+Package atveryend Info: \enddocument detected (standard20110627).
+Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
+Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
+Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\auxhook.sty"
+Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+)
+\@linkdim=\dimen157
+\Hy@linkcounter=\count128
+\Hy@pagecounter=\count129
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\pd1enc.def"
+File: pd1enc.def 2016/06/24 v6.83q Hyperref: PDFDocEncoding definition (HO)
+)
+\Hy@SavedSpaceFactor=\count130
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\hyperref.cfg"
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+Package hyperref Info: Hyper figures OFF on input line 4486.
+Package hyperref Info: Link nesting OFF on input line 4491.
+Package hyperref Info: Hyper index ON on input line 4494.
+Package hyperref Info: Plain pages OFF on input line 4501.
+Package hyperref Info: Backreferencing OFF on input line 4506.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4735.
+\c@Hy@tempcnt=\count131
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\url\url.sty"
+\Urlmuskip=\muskip11
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 5088.
+\XeTeXLinkMargin=\dimen158
+\Fld@menulength=\count132
+\Field@Width=\dimen159
+\Fld@charsize=\dimen160
+Package hyperref Info: Hyper figures OFF on input line 6342.
+Package hyperref Info: Link nesting OFF on input line 6347.
+Package hyperref Info: Hyper index ON on input line 6350.
+Package hyperref Info: backreferencing OFF on input line 6357.
+Package hyperref Info: Link coloring OFF on input line 6362.
+Package hyperref Info: Link coloring with OCG OFF on input line 6367.
+Package hyperref Info: PDF/A mode OFF on input line 6372.
+LaTeX Info: Redefining \ref on input line 6412.
+LaTeX Info: Redefining \pageref on input line 6416.
+\Hy@abspage=\count133
+\c@Item=\count134
+\c@Hfootnote=\count135
+)
+
+Package hyperref Message: Driver (autodetected): hpdftex.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\hpdftex.def"
+File: hpdftex.def 2016/06/24 v6.83q Hyperref driver for pdfTeX
+\Fld@listcount=\count136
+\c@bookmark@seq@number=\count137
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\rerunfilecheck.sty"
+Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+82.
+)
+\Hy@SectionHShift=\skip55
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\mathtools\mathtools.sty"
+Package: mathtools 2015/11/12 v1.18 mathematical typesetting tools
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\calc.sty"
+Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count138
+\calc@Bcount=\count139
+\calc@Adimen=\dimen161
+\calc@Bdimen=\dimen162
+\calc@Askip=\skip56
+\calc@Bskip=\skip57
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count140
+\calc@Cskip=\skip58
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\mathtools\mhsetup.sty"
+Package: mhsetup 2010/01/21 v1.2a programming setup (MH)
+)
+LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
+\g_MT_multlinerow_int=\count141
+\l_MT_multwidth_dim=\dimen163
+\origjot=\skip59
+\l_MT_shortvdotswithinadjustabove_dim=\dimen164
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen165
+\l_MT_above_intertext_sep=\dimen166
+\l_MT_below_intertext_sep=\dimen167
+\l_MT_above_shortintertext_sep=\dimen168
+\l_MT_below_shortintertext_sep=\dimen169
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amscls\amsthm.sty"
+Package: amsthm 2015/03/04 v2.20.2
+\thm@style=\toks33
+\thm@bodyfont=\toks34
+\thm@headfont=\toks35
+\thm@notefont=\toks36
+\thm@headpunct=\toks37
+\thm@preskip=\skip60
+\thm@postskip=\skip61
+\thm@headsep=\skip62
+\dth@everypar=\toks38
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 39.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\geometry\geometry.sty"
+Package: geometry 2010/09/12 v5.6 Page Geometry
+\Gm@cnth=\count142
+\Gm@cntv=\count143
+\c@Gm@tempcnt=\count144
+\Gm@bindingoffset=\dimen170
+\Gm@wd@mp=\dimen171
+\Gm@odd@mp=\dimen172
+\Gm@even@mp=\dimen173
+\Gm@layoutwidth=\dimen174
+\Gm@layoutheight=\dimen175
+\Gm@layouthoffset=\dimen176
+\Gm@layoutvoffset=\dimen177
+\Gm@dimlist=\toks39
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\geometry\geometry.cfg"))
+
+Package geometry Warning: Over-specification in `h'-direction.
+    `width' (597.50787pt) is ignored.
+
+
+Package geometry Warning: Over-specification in `v'-direction.
+    `height' (845.04684pt) is ignored.
+
+Package color Info: Redefining color mygreen on input line 50.
+Package color Info: Redefining color mylilas on input line 51.
+Package color Info: Redefining color dkgreen on input line 52.
+Package color Info: Redefining color gray on input line 53.
+Package color Info: Redefining color mauve on input line 54.
+\@input{Glossary.aux}
+\openout2 = `Glossary.aux'.
+
+No file Glossary.tex.
+(main.aux)
+\openout1 = `main.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 80.
+LaTeX Font Info:    ... okay on input line 80.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 80.
+LaTeX Font Info:    ... okay on input line 80.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 80.
+LaTeX Font Info:    ... okay on input line 80.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 80.
+LaTeX Font Info:    ... okay on input line 80.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 80.
+LaTeX Font Info:    ... okay on input line 80.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 80.
+LaTeX Font Info:    ... okay on input line 80.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 80.
+LaTeX Font Info:    ... okay on input line 80.
+ ("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count145
+\scratchdimen=\dimen178
+\scratchbox=\box36
+\nofMPsegments=\count146
+\nofMParguments=\count147
+\everyMPshowfont=\toks40
+\MPscratchCnt=\count148
+\MPscratchDim=\dimen179
+\MPnumerator=\count149
+\makeMPintoPDFobject=\count150
+\everyMPtoPDFconversion=\toks41
+) ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty"
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\grfext.sty"
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+)
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+38.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ms\ragged2e.sty"
+Package: ragged2e 2009/05/21 v2.1 ragged2e Package (MS)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ms\everysel.sty"
+Package: everysel 2011/10/28 v1.2 EverySelectfont Package (MS)
+
+ABD: EverySelectfont initializing macros
+LaTeX Info: Redefining \selectfont on input line 126.
+)
+\CenteringLeftskip=\skip63
+\RaggedLeftLeftskip=\skip64
+\RaggedRightLeftskip=\skip65
+\CenteringRightskip=\skip66
+\RaggedLeftRightskip=\skip67
+\RaggedRightRightskip=\skip68
+\CenteringParfillskip=\skip69
+\RaggedLeftParfillskip=\skip70
+\RaggedRightParfillskip=\skip71
+\JustifyingParfillskip=\skip72
+\CenteringParindent=\skip73
+\RaggedLeftParindent=\skip74
+\RaggedRightParindent=\skip75
+\JustifyingParindent=\skip76
+)
+\c@lstlisting=\count151
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: hyperref package is loaded.
+Package caption Info: End \AtBeginDocument code.
+
+ABD: EveryShipout initializing macros
+\AtBeginShipoutBox=\box37
+Package hyperref Info: Link coloring ON on input line 80.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
+Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
+Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
+)
+\c@section@level=\count152
+)
+LaTeX Info: Redefining \ref on input line 80.
+LaTeX Info: Redefining \pageref on input line 80.
+LaTeX Info: Redefining \nameref on input line 80.
+
+(main.out) (main.out)
+\@outlinefile=\write3
+\openout3 = `main.out'.
+
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(22.76219pt, 551.98349pt, 22.76219pt)
+* v-part:(T,H,B)=(42.67912pt, 759.6886pt, 42.67912pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=551.98349pt
+* \textheight=759.6886pt
+* \oddsidemargin=-49.5078pt
+* \evensidemargin=-49.5078pt
+* \topmargin=-66.59087pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=10.0pt
+* \footskip=30.0pt
+* \marginparwidth=57.0pt
+* \marginparsep=11.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+LaTeX Font Info:    Try loading font information for U+msa on input line 84.
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 84.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+<Images3/icon1.png, id=6, 349.305pt x 145.54375pt>
+File: Images3/icon1.png Graphic file (type png)
+ <use Images3/icon1.png>
+Package pdftex.def Info: Images3/icon1.png used on input line 90.
+(pdftex.def)             Requested size: 220.79002pt x 91.99728pt.
+
+<Images3/icon2.png, id=7, 747.79375pt x 747.79375pt>
+File: Images3/icon2.png Graphic file (type png)
+ <use Images3/icon2.png>
+Package pdftex.def Info: Images3/icon2.png used on input line 91.
+(pdftex.def)             Requested size: 220.79002pt x 220.79121pt.
+
+[1
+
+
+
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map} <./Images3/icon1.png> <./I
+mages3/icon2.png>]
+\openout2 = `Q1.aux'.
+
+ (Q1.tex
+<Images3/400.jpg, id=18, 1205.50375pt x 904.37875pt>
+File: Images3/400.jpg Graphic file (type jpg)
+ <use Images3/400.jpg>
+Package pdftex.def Info: Images3/400.jpg used on input line 7.
+(pdftex.def)             Requested size: 275.99174pt x 207.05055pt.
+
+<Images3/401.jpg, id=19, 1205.50375pt x 904.37875pt>
+File: Images3/401.jpg Graphic file (type jpg)
+ <use Images3/401.jpg>
+Package pdftex.def Info: Images3/401.jpg used on input line 12.
+(pdftex.def)             Requested size: 275.99174pt x 207.05055pt.
+
+
+LaTeX Warning: Reference `C2' on page 2 undefined on input line 18.
+
+
+LaTeX Warning: Reference `C4' on page 2 undefined on input line 18.
+
+! Extra }, or forgotten $.
+l.25 ...2)}\otimes U_{r}^{(3)}\otimes U_{r}^{(4)}}
+                                                  
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+
+LaTeX Warning: Reference `BTD' on page 2 undefined on input line 28.
+
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no “ in font cmr10!
+
+LaTeX Warning: Reference `C22' on page 2 undefined on input line 34.
+
+
+LaTeX Warning: Reference `C44' on page 2 undefined on input line 34.
+
+<Images3/402.jpg, id=20, 1205.50375pt x 904.37875pt>
+File: Images3/402.jpg Graphic file (type jpg)
+ <use Images3/402.jpg>
+Package pdftex.def Info: Images3/402.jpg used on input line 39.
+(pdftex.def)             Requested size: 182.15555pt x 136.64453pt.
+
+<Images3/403.jpg, id=21, 1205.50375pt x 904.37875pt>
+File: Images3/403.jpg Graphic file (type jpg)
+ <use Images3/403.jpg>
+Package pdftex.def Info: Images3/403.jpg used on input line 44.
+(pdftex.def)             Requested size: 182.15555pt x 136.64453pt.
+
+<Images3/404.jpg, id=22, 1205.50375pt x 904.37875pt>
+File: Images3/404.jpg Graphic file (type jpg)
+ <use Images3/404.jpg>
+Package pdftex.def Info: Images3/404.jpg used on input line 49.
+(pdftex.def)             Requested size: 182.15555pt x 136.64453pt.
+
+<Images3/405.jpg, id=23, 1205.50375pt x 904.37875pt>
+File: Images3/405.jpg Graphic file (type jpg)
+ <use Images3/405.jpg>
+Package pdftex.def Info: Images3/405.jpg used on input line 61.
+(pdftex.def)             Requested size: 182.15555pt x 136.64453pt.
+
+<Images3/406.jpg, id=24, 1205.50375pt x 904.37875pt>
+File: Images3/406.jpg Graphic file (type jpg)
+ <use Images3/406.jpg>
+Package pdftex.def Info: Images3/406.jpg used on input line 66.
+(pdftex.def)             Requested size: 182.15555pt x 136.64453pt.
+
+<Images3/407.jpg, id=25, 1205.50375pt x 904.37875pt>
+File: Images3/407.jpg Graphic file (type jpg)
+ <use Images3/407.jpg>
+Package pdftex.def Info: Images3/407.jpg used on input line 71.
+(pdftex.def)             Requested size: 182.15555pt x 136.64453pt.
+
+
+LaTeX Warning: Reference `C2' on page 2 undefined on input line 78.
+
+
+LaTeX Warning: Reference `C4' on page 2 undefined on input line 78.
+
+
+LaTeX Warning: Reference `C222' on page 2 undefined on input line 78.
+
+
+LaTeX Warning: Reference `C444' on page 2 undefined on input line 78.
+
+<Images3/408.jpg, id=26, 1205.50375pt x 904.37875pt>
+File: Images3/408.jpg Graphic file (type jpg)
+ <use Images3/408.jpg>
+Package pdftex.def Info: Images3/408.jpg used on input line 85.
+(pdftex.def)             Requested size: 275.99174pt x 207.05055pt.
+
+<Images3/409.jpg, id=27, 1205.50375pt x 904.37875pt>
+File: Images3/409.jpg Graphic file (type jpg)
+ <use Images3/409.jpg>
+Package pdftex.def Info: Images3/409.jpg used on input line 90.
+(pdftex.def)             Requested size: 275.99174pt x 207.05055pt.
+
+<Images3/410.jpg, id=28, 1205.50375pt x 904.37875pt>
+File: Images3/410.jpg Graphic file (type jpg)
+ <use Images3/410.jpg>
+Package pdftex.def Info: Images3/410.jpg used on input line 100.
+(pdftex.def)             Requested size: 275.99174pt x 207.05055pt.
+
+<Images3/412.jpg, id=29, 1205.50375pt x 904.37875pt>
+File: Images3/412.jpg Graphic file (type jpg)
+ <use Images3/412.jpg>
+Package pdftex.def Info: Images3/412.jpg used on input line 102.
+(pdftex.def)             Requested size: 275.99174pt x 207.05055pt.
+
+<Images3/411.jpg, id=30, 1205.50375pt x 904.37875pt>
+File: Images3/411.jpg Graphic file (type jpg)
+ <use Images3/411.jpg>
+Package pdftex.def Info: Images3/411.jpg used on input line 107.
+(pdftex.def)             Requested size: 275.99174pt x 207.05055pt.
+
+<Images3/413.jpg, id=31, 1205.50375pt x 904.37875pt>
+File: Images3/413.jpg Graphic file (type jpg)
+ <use Images3/413.jpg>
+Package pdftex.def Info: Images3/413.jpg used on input line 109.
+(pdftex.def)             Requested size: 275.99174pt x 207.05055pt.
+)
+[2
+
+ <./Images3/400.jpg> <./Images3/401.jpg> <./Images3/402.jpg> <./Images3/403.jpg
+> <./Images3/404.jpg>] [3 <./Images3/405.jpg> <./Images3/406.jpg> <./Images3/40
+7.jpg> <./Images3/408.jpg> <./Images3/409.jpg>] [4 <./Images3/410.jpg> <./Image
+s3/412.jpg> <./Images3/411.jpg> <./Images3/413.jpg>]
+\openout2 = `Q2.aux'.
+
+ (Q2.tex
+
+LaTeX Warning: Citation `3' on page 5 undefined on input line 3.
+
+
+LaTeX Warning: Reference `eq1' on page 5 undefined on input line 3.
+
+
+LaTeX Warning: Citation `1' on page 5 undefined on input line 9.
+
+
+LaTeX Warning: Citation `2' on page 5 undefined on input line 9.
+
+
+LaTeX Warning: Citation `1' on page 5 undefined on input line 11.
+
+
+LaTeX Warning: Reference `eq1' on page 5 undefined on input line 29.
+
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 35.
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 35.
+
+
+LaTeX Warning: Reference `A2' on page 5 undefined on input line 43.
+
+
+LaTeX Warning: Reference `fig1' on page 5 undefined on input line 45.
+
+
+LaTeX Warning: Reference `fig2' on page 5 undefined on input line 45.
+
+
+LaTeX Warning: Reference `fig3' on page 5 undefined on input line 47.
+
+<Images3/1.jpg, id=61, 1205.50375pt x 904.37875pt>
+File: Images3/1.jpg Graphic file (type jpg)
+ <use Images3/1.jpg>
+Package pdftex.def Info: Images3/1.jpg used on input line 56.
+(pdftex.def)             Requested size: 248.39088pt x 186.33722pt.
+
+<Images3/2.jpg, id=62, 1205.50375pt x 904.37875pt>
+File: Images3/2.jpg Graphic file (type jpg)
+ <use Images3/2.jpg>
+Package pdftex.def Info: Images3/2.jpg used on input line 56.
+(pdftex.def)             Requested size: 248.39088pt x 186.33722pt.
+
+<Images3/3.jpg, id=63, 1205.50375pt x 904.37875pt>
+File: Images3/3.jpg Graphic file (type jpg)
+ <use Images3/3.jpg>
+Package pdftex.def Info: Images3/3.jpg used on input line 56.
+(pdftex.def)             Requested size: 248.39088pt x 186.33722pt.
+
+<Images3/4.jpg, id=64, 1205.50375pt x 904.37875pt>
+File: Images3/4.jpg Graphic file (type jpg)
+ <use Images3/4.jpg>
+Package pdftex.def Info: Images3/4.jpg used on input line 56.
+(pdftex.def)             Requested size: 248.39088pt x 186.33722pt.
+
+<Images3/5.jpg, id=65, 1205.50375pt x 904.37875pt>
+File: Images3/5.jpg Graphic file (type jpg)
+ <use Images3/5.jpg>
+Package pdftex.def Info: Images3/5.jpg used on input line 56.
+(pdftex.def)             Requested size: 248.39088pt x 186.33722pt.
+
+<Images3/6.jpg, id=66, 1205.50375pt x 904.37875pt>
+File: Images3/6.jpg Graphic file (type jpg)
+ <use Images3/6.jpg>
+Package pdftex.def Info: Images3/6.jpg used on input line 56.
+(pdftex.def)             Requested size: 248.39088pt x 186.33722pt.
+
+Overfull \hbox (12.22223pt too wide) in paragraph at lines 56--57
+[]$[]$  $[]$
+ []
+
+
+Overfull \hbox (12.22223pt too wide) in paragraph at lines 56--57
+[]$  $[]$
+ []
+
+
+Overfull \hbox (12.22223pt too wide) in paragraph at lines 56--57
+[]$  $[]$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 56--57
+
+ []
+
+<Images3/7.jpg, id=67, 1205.50375pt x 904.37875pt>
+File: Images3/7.jpg Graphic file (type jpg)
+ <use Images3/7.jpg>
+Package pdftex.def Info: Images3/7.jpg used on input line 65.
+(pdftex.def)             Requested size: 248.39088pt x 186.33722pt.
+
+<Images3/8.jpg, id=68, 1205.50375pt x 904.37875pt>
+File: Images3/8.jpg Graphic file (type jpg)
+ <use Images3/8.jpg>
+Package pdftex.def Info: Images3/8.jpg used on input line 65.
+(pdftex.def)             Requested size: 248.39088pt x 186.33722pt.
+
+<Images3/9.jpg, id=69, 1205.50375pt x 904.37875pt>
+File: Images3/9.jpg Graphic file (type jpg)
+ <use Images3/9.jpg>
+Package pdftex.def Info: Images3/9.jpg used on input line 65.
+(pdftex.def)             Requested size: 248.39088pt x 186.33722pt.
+
+<Images3/10.jpg, id=70, 1205.50375pt x 904.37875pt>
+File: Images3/10.jpg Graphic file (type jpg)
+ <use Images3/10.jpg>
+Package pdftex.def Info: Images3/10.jpg used on input line 65.
+(pdftex.def)             Requested size: 248.39088pt x 186.33722pt.
+
+<Images3/11.jpg, id=71, 1205.50375pt x 904.37875pt>
+File: Images3/11.jpg Graphic file (type jpg)
+ <use Images3/11.jpg>
+Package pdftex.def Info: Images3/11.jpg used on input line 65.
+(pdftex.def)             Requested size: 248.39088pt x 186.33722pt.
+
+<Images3/12.jpg, id=72, 1205.50375pt x 904.37875pt>
+File: Images3/12.jpg Graphic file (type jpg)
+ <use Images3/12.jpg>
+Package pdftex.def Info: Images3/12.jpg used on input line 65.
+(pdftex.def)             Requested size: 248.39088pt x 186.33722pt.
+
+Overfull \hbox (10.00002pt too wide) in paragraph at lines 65--66
+[]$[]$ $[]$
+ []
+
+
+Overfull \hbox (10.00002pt too wide) in paragraph at lines 65--66
+[]$ $[]$
+ []
+
+
+Overfull \hbox (10.00002pt too wide) in paragraph at lines 65--66
+[]$ $[]$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 65--66
+
+ []
+
+<Images3/15.jpg, id=73, 1205.50375pt x 904.37875pt>
+File: Images3/15.jpg Graphic file (type jpg)
+ <use Images3/15.jpg>
+Package pdftex.def Info: Images3/15.jpg used on input line 75.
+(pdftex.def)             Requested size: 163.93887pt x 122.98283pt.
+
+<Images3/16.jpg, id=74, 1205.50375pt x 904.37875pt>
+File: Images3/16.jpg Graphic file (type jpg)
+ <use Images3/16.jpg>
+Package pdftex.def Info: Images3/16.jpg used on input line 75.
+(pdftex.def)             Requested size: 163.93887pt x 122.98283pt.
+
+<Images3/17.jpg, id=75, 1205.50375pt x 904.37875pt>
+File: Images3/17.jpg Graphic file (type jpg)
+ <use Images3/17.jpg>
+Package pdftex.def Info: Images3/17.jpg used on input line 75.
+(pdftex.def)             Requested size: 163.93887pt x 122.98283pt.
+
+Overfull \hbox (14.48318pt too wide) in paragraph at lines 75--76
+[]$[]$ $[]$ $[]$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 75--76
+
+ []
+
+
+LaTeX Warning: Reference `A1' on page 5 undefined on input line 80.
+
+) [5
+
+
+] [6 <./Images3/1.jpg> <./Images3/2.jpg> <./Images3/3.jpg> <./Images3/4.jpg> <.
+/Images3/5.jpg> <./Images3/6.jpg>] [7 <./Images3/7.jpg> <./Images3/8.jpg> <./Im
+ages3/9.jpg> <./Images3/10.jpg> <./Images3/11.jpg> <./Images3/12.jpg> <./Images
+3/15.jpg> <./Images3/16.jpg> <./Images3/17.jpg>]
+\openout2 = `Q3.aux'.
+
+ (Q3.tex
+
+LaTeX Warning: Reference `FECG1' on page 8 undefined on input line 4.
+
+
+LaTeX Warning: Reference `FECG1' on page 8 undefined on input line 4.
+
+
+LaTeX Warning: Reference `FECG1' on page 8 undefined on input line 6.
+
+<Images3/100.jpg, id=96, 1205.50375pt x 904.37875pt>
+File: Images3/100.jpg Graphic file (type jpg)
+ <use Images3/100.jpg>
+Package pdftex.def Info: Images3/100.jpg used on input line 13.
+(pdftex.def)             Requested size: 275.99174pt x 207.05055pt.
+
+<Images3/101.jpg, id=97, 1205.50375pt x 904.37875pt>
+File: Images3/101.jpg Graphic file (type jpg)
+ <use Images3/101.jpg>
+Package pdftex.def Info: Images3/101.jpg used on input line 18.
+(pdftex.def)             Requested size: 275.99174pt x 207.05055pt.
+)
+[8
+
+
+ <./Images3/100.jpg> <./Images3/101.jpg>]
+\openout2 = `Q4.aux'.
+
+ (Q4.tex
+
+LaTeX Warning: Reference `eq1' on page 9 undefined on input line 3.
+
+
+LaTeX Warning: Reference `eq1' on page 9 undefined on input line 11.
+
+
+LaTeX Warning: Reference `eq44' on page 9 undefined on input line 24.
+
+
+LaTeX Warning: Reference `eq45' on page 9 undefined on input line 24.
+
+
+LaTeX Warning: Reference `eq45' on page 9 undefined on input line 32.
+
+
+LaTeX Warning: Reference `A' on page 9 undefined on input line 34.
+
+
+LaTeX Warning: Reference `B' on page 9 undefined on input line 34.
+
+
+LaTeX Warning: Reference `C' on page 9 undefined on input line 34.
+
+<Images3/201.jpg, id=104, 1205.50375pt x 904.37875pt>
+File: Images3/201.jpg Graphic file (type jpg)
+ <use Images3/201.jpg>
+Package pdftex.def Info: Images3/201.jpg used on input line 40.
+(pdftex.def)             Requested size: 182.15555pt x 136.64453pt.
+
+<Images3/202.jpg, id=105, 1205.50375pt x 904.37875pt>
+File: Images3/202.jpg Graphic file (type jpg)
+ <use Images3/202.jpg>
+Package pdftex.def Info: Images3/202.jpg used on input line 45.
+(pdftex.def)             Requested size: 182.15555pt x 136.64453pt.
+
+<Images3/203.jpg, id=106, 1205.50375pt x 904.37875pt>
+File: Images3/203.jpg Graphic file (type jpg)
+ <use Images3/203.jpg>
+Package pdftex.def Info: Images3/203.jpg used on input line 50.
+(pdftex.def)             Requested size: 182.15555pt x 136.64453pt.
+
+
+LaTeX Warning: Reference `A' on page 9 undefined on input line 56.
+
+
+LaTeX Warning: Reference `B' on page 9 undefined on input line 56.
+
+
+LaTeX Warning: Reference `C' on page 9 undefined on input line 56.
+
+
+LaTeX Warning: Reference `T' on page 9 undefined on input line 58.
+
+
+LaTeX Warning: Reference `EA' on page 9 undefined on input line 58.
+
+
+LaTeX Warning: Reference `EB' on page 9 undefined on input line 58.
+
+
+LaTeX Warning: Reference `EC' on page 9 undefined on input line 58.
+
+
+LaTeX Warning: Reference `ICA_E' on page 9 undefined on input line 58.
+
+<Images3/200.jpg, id=107, 1205.50375pt x 904.37875pt>
+File: Images3/200.jpg Graphic file (type jpg)
+ <use Images3/200.jpg>
+Package pdftex.def Info: Images3/200.jpg used on input line 62.
+(pdftex.def)             Requested size: 275.99174pt x 207.05055pt.
+
+<Images3/204.jpg, id=108, 1205.50375pt x 904.37875pt>
+File: Images3/204.jpg Graphic file (type jpg)
+ <use Images3/204.jpg>
+Package pdftex.def Info: Images3/204.jpg used on input line 71.
+(pdftex.def)             Requested size: 182.15555pt x 136.64453pt.
+
+<Images3/205.jpg, id=109, 1205.50375pt x 904.37875pt>
+File: Images3/205.jpg Graphic file (type jpg)
+ <use Images3/205.jpg>
+Package pdftex.def Info: Images3/205.jpg used on input line 76.
+(pdftex.def)             Requested size: 182.15555pt x 136.64453pt.
+
+<Images3/206.jpg, id=110, 1205.50375pt x 904.37875pt>
+File: Images3/206.jpg Graphic file (type jpg)
+ <use Images3/206.jpg>
+Package pdftex.def Info: Images3/206.jpg used on input line 81.
+(pdftex.def)             Requested size: 182.15555pt x 136.64453pt.
+
+<Images3/207.jpg, id=111, 1205.50375pt x 904.37875pt>
+File: Images3/207.jpg Graphic file (type jpg)
+ <use Images3/207.jpg>
+Package pdftex.def Info: Images3/207.jpg used on input line 90.
+(pdftex.def)             Requested size: 275.99174pt x 207.05055pt.
+
+<Images3/208.jpg, id=112, 1205.50375pt x 904.37875pt>
+File: Images3/208.jpg Graphic file (type jpg)
+ <use Images3/208.jpg>
+Package pdftex.def Info: Images3/208.jpg used on input line 95.
+(pdftex.def)             Requested size: 275.99174pt x 207.05055pt.
+
+
+LaTeX Warning: Reference `MLSVD2' on page 9 undefined on input line 101.
+
+
+LaTeX Warning: Reference `MLSVD1' on page 9 undefined on input line 101.
+
+<Images3/209.jpg, id=113, 1205.50375pt x 904.37875pt>
+File: Images3/209.jpg Graphic file (type jpg)
+ <use Images3/209.jpg>
+Package pdftex.def Info: Images3/209.jpg used on input line 107.
+(pdftex.def)             Requested size: 275.99174pt x 207.05055pt.
+
+<Images3/210.jpg, id=114, 1205.50375pt x 904.37875pt>
+File: Images3/210.jpg Graphic file (type jpg)
+ <use Images3/210.jpg>
+Package pdftex.def Info: Images3/210.jpg used on input line 112.
+(pdftex.def)             Requested size: 275.99174pt x 207.05055pt.
+
+<Images3/211.jpg, id=115, 1205.50375pt x 904.37875pt>
+File: Images3/211.jpg Graphic file (type jpg)
+ <use Images3/211.jpg>
+Package pdftex.def Info: Images3/211.jpg used on input line 121.
+(pdftex.def)             Requested size: 275.99174pt x 207.05055pt.
+
+<Images3/212.jpg, id=116, 1205.50375pt x 904.37875pt>
+File: Images3/212.jpg Graphic file (type jpg)
+ <use Images3/212.jpg>
+Package pdftex.def Info: Images3/212.jpg used on input line 126.
+(pdftex.def)             Requested size: 275.99174pt x 207.05055pt.
+
+
+LaTeX Warning: Reference `CPD-1' on page 9 undefined on input line 135.
+
+
+LaTeX Warning: Reference `CPD-1' on page 9 undefined on input line 137.
+
+<Images3/213.jpg, id=117, 1205.50375pt x 904.37875pt>
+File: Images3/213.jpg Graphic file (type jpg)
+ <use Images3/213.jpg>
+Package pdftex.def Info: Images3/213.jpg used on input line 143.
+(pdftex.def)             Requested size: 275.99174pt x 207.05055pt.
+
+[9
+
+
+ <./Images3/201.jpg> <./Images3/202.jpg> <./Images3/203.jpg>] [10 <./Images3/20
+0.jpg> <./Images3/204.jpg> <./Images3/205.jpg> <./Images3/206.jpg> <./Images3/2
+07.jpg> <./Images3/208.jpg>] [11 <./Images3/209.jpg> <./Images3/210.jpg> <./Ima
+ges3/211.jpg> <./Images3/212.jpg>]
+
+LaTeX Warning: Reference `CPD-2' on page 12 undefined on input line 148.
+
+) [12 <./Images3/213.jpg>]
+\openout2 = `Q5.aux'.
+
+ (Q5.tex
+<Images3/300.jpg, id=145, 1205.50375pt x 904.37875pt>
+File: Images3/300.jpg Graphic file (type jpg)
+ <use Images3/300.jpg>
+Package pdftex.def Info: Images3/300.jpg used on input line 7.
+(pdftex.def)             Requested size: 275.99174pt x 207.05055pt.
+
+<Images3/301.jpg, id=146, 1205.50375pt x 904.37875pt>
+File: Images3/301.jpg Graphic file (type jpg)
+ <use Images3/301.jpg>
+Package pdftex.def Info: Images3/301.jpg used on input line 12.
+(pdftex.def)             Requested size: 275.99174pt x 207.05055pt.
+
+
+LaTeX Warning: Reference `CPD-4' on page 13 undefined on input line 20.
+
+<Images3/304.jpg, id=147, 1205.50375pt x 904.37875pt>
+File: Images3/304.jpg Graphic file (type jpg)
+ <use Images3/304.jpg>
+Package pdftex.def Info: Images3/304.jpg used on input line 24.
+(pdftex.def)             Requested size: 275.99174pt x 207.05055pt.
+
+
+LaTeX Warning: Reference `AC1' on page 13 undefined on input line 33.
+
+
+LaTeX Warning: Reference `AC2' on page 13 undefined on input line 33.
+
+
+LaTeX Warning: Reference `AC1' on page 13 undefined on input line 33.
+
+
+LaTeX Warning: Reference `AC2' on page 13 undefined on input line 33.
+
+<Images3/302.jpg, id=148, 1205.50375pt x 904.37875pt>
+File: Images3/302.jpg Graphic file (type jpg)
+ <use Images3/302.jpg>
+Package pdftex.def Info: Images3/302.jpg used on input line 40.
+(pdftex.def)             Requested size: 275.99174pt x 207.05055pt.
+
+<Images3/303.jpg, id=149, 1205.50375pt x 904.37875pt>
+File: Images3/303.jpg Graphic file (type jpg)
+ <use Images3/303.jpg>
+Package pdftex.def Info: Images3/303.jpg used on input line 45.
+(pdftex.def)             Requested size: 275.99174pt x 207.05055pt.
+
+
+LaTeX Warning: Reference `AC3' on page 13 undefined on input line 51.
+
+
+LaTeX Warning: Reference `AC4' on page 13 undefined on input line 51.
+
+<Images3/305.jpg, id=150, 2571.6075pt x 1329.96875pt>
+File: Images3/305.jpg Graphic file (type jpg)
+ <use Images3/305.jpg>
+Package pdftex.def Info: Images3/305.jpg used on input line 57.
+(pdftex.def)             Requested size: 275.99174pt x 142.72533pt.
+
+<Images3/307.jpg, id=151, 2571.6075pt x 1329.96875pt>
+File: Images3/307.jpg Graphic file (type jpg)
+ <use Images3/307.jpg>
+Package pdftex.def Info: Images3/307.jpg used on input line 62.
+(pdftex.def)             Requested size: 275.99174pt x 142.72533pt.
+)
+[13
+
+
+ <./Images3/300.jpg> <./Images3/301.jpg> <./Images3/304.jpg>] [14 <./Images3/30
+2.jpg> <./Images3/303.jpg> <./Images3/305.jpg> <./Images3/307.jpg>]
+No file main.bbl.
+\openout2 = `A1.aux'.
+
+(A1.tex <Images3/13.jpg, id=166, 1205.50375pt x 904.37875pt>
+File: Images3/13.jpg Graphic file (type jpg)
+
+<use Images3/13.jpg>
+Package pdftex.def Info: Images3/13.jpg used on input line 8.
+(pdftex.def)             Requested size: 275.99174pt x 207.05055pt.
+ <Images3/14.jpg, id=167, 1205.50375pt x 904.37875pt>
+File: Images3/14.jpg Graphic file (type jpg)
+
+<use Images3/14.jpg>
+Package pdftex.def Info: Images3/14.jpg used on input line 13.
+(pdftex.def)             Requested size: 275.99174pt x 207.05055pt.
+) [15
+
+
+
+
+ <./Images3/13.jpg> <./Images3/14.jpg>]
+\openout2 = `A2.aux'.
+
+
+No file A2.tex.
+\openout2 = `Appendix.aux'.
+
+(Appendix.tex
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
+File: lstlang1.sty 2015/06/04 1.6 listings language file
+)
+(Code3/Q1.m
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <8> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 11.
+ [16
+
+
+
+
+]) (Code3/Q2.m [17] [18]) (Code3/Q3.m) (Code3/Q4.m [19] [20])
+(Code3/Q5.m [21]) (Code3/Vangjush_AddNoise.m) (Code3/Vangjush_Best_Ordering.m
+[22]) (Code3/Vangjush_BSS_Evaluate.m) (Code3/Vangjush_BSS_Final.m)
+(Code3/Vangjush_Centering.m) (Code3/Vangjush_Decompose_BSS.m)
+(Code3/Vangjush_Fast_ICA.m
+LaTeX Font Info:    Try loading font information for OML+cmr on input line 14.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omlcmr.fd"
+File: omlcmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <8> not available
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 14.
+ [23])
+(Code3/Vangjush_Fast_ICA_Final.m) (Code3/Vangjush_Inner_Product.m)
+(Code3/Vangjush_Inner_Product_Second.m) (Code3/Vangjush_Normalise_3D.m)
+(Code3/Vangjush_Plot_Evaluation.m) [24] (Code3/Vangjush_PlotEEG.m)
+(Code3/Vangjush_Save_Images.m) (Code3/Vangjush_Scale.m)
+(Code3/Vangjush_SignalProjection.m) (Code3/Vangjush_Whitening.m)) [25]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 112.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 112.
+
+(main.aux (Q1.aux) (Q2.aux) (Q3.aux) (Q4.aux) (Q5.aux) (A1.aux) (A2.aux)
+(Appendix.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 112.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 112.
+
+
+Package rerunfilecheck Warning: File `main.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `main.out':
+(rerunfilecheck)             Before: D41D8CD98F00B204E9800998ECF8427E;0
+(rerunfilecheck)             After:  25A9E14EED61F0B7B51BA8DBAF33691D;827.
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 112.
+ ) 
+Here is how much of TeX's memory you used:
+ 18049 strings out of 493334
+ 297561 string characters out of 3136642
+ 626107 words of memory out of 3000000
+ 20352 multiletter control sequences out of 15000+200000
+ 12496 words of font info for 48 fonts, out of 3000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 59i,12n,94p,881b,2236s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb>
+<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C
+:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/
+Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Pr
+ogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Progr
+am Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program 
+Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Fil
+es (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files 
+(x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files (x8
+6)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Program Files (x86)/M
+iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files (x86)/MiKTe
+X 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files (x86)/MiKTeX 2.
+9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Program Files (x86)/MiKTeX 2.9/fo
+nts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/font
+s/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/t
+ype1/public/amsfonts/cm/cmti12.pfb>
+Output written on main.pdf (25 pages, 5136426 bytes).
+PDF statistics:
+ 1186 PDF objects out of 1200 (max. 8388607)
+ 814 named destinations out of 1000 (max. 500000)
+ 281 words of extra memory for PDF output out of 10000 (max. 10000000)
+

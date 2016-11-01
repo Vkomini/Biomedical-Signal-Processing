@@ -1,0 +1,7 @@
+$ $&$HSVD$&$HTLS$&$HTLSPKFD$&$HSVD$&$HTLS$&$HTLSPKFD$\\  
+  \hline    
+ $ $&$Pure signal$&$Pure signal$&$Pure signal$&$Noisy signal$&$Noisy signal$&$Noisy signal$\\
+  \hline    
+$Mean$&$5.928808e-04$&$6.241688e-04$&$5.415201e-04$&$1.451811e-03$&$1.228149e-03$&$1.326272e-03$\\ 
+$Var$&$1.976946e-02$&$2.017998e-02$&$2.015972e-02$&$2.200519e-02$&$2.384214e-02$&$2.430506e-02$\\ 
+  \hline  

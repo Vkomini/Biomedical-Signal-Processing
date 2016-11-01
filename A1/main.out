@@ -1,0 +1,23 @@
+\BOOKMARK [1][-]{section.1}{Introduction}{}% 1
+\BOOKMARK [1][-]{section.2}{Artifact removal}{}% 2
+\BOOKMARK [2][-]{subsection.2.1}{Comparison with classical filters}{section.2}% 3
+\BOOKMARK [1][-]{section.3}{Parameter estimation}{}% 4
+\BOOKMARK [2][-]{subsection.3.1}{Subspace methods for parameter estimation}{section.3}% 5
+\BOOKMARK [1][-]{section.4}{Noise removal}{}% 6
+\BOOKMARK [2][-]{subsection.4.1}{Cadzow vs Minimum Variance}{section.4}% 7
+\BOOKMARK [2][-]{subsection.4.2}{Cadzow vs Multi-Channel Cadzow}{section.4}% 8
+\BOOKMARK [2][-]{subsection.4.3}{Cadzow vs Optimized Multi-Channel Cadzow }{section.4}% 9
+\BOOKMARK [1][-]{section.5}{Multi-channel data}{}% 10
+\BOOKMARK [1][-]{appendix.A}{Additional figure}{}% 11
+\BOOKMARK [2][-]{subsection.A.1}{ Outcome for different model order}{appendix.A}% 12
+\BOOKMARK [1][-]{appendix.B}{Parameter estimation}{}% 13
+\BOOKMARK [2][-]{subsection.B.1}{Residue signal after reconstruction}{appendix.B}% 14
+\BOOKMARK [2][-]{subsection.B.2}{ Individual component for each method}{appendix.B}% 15
+\BOOKMARK [2][-]{subsection.B.3}{Parameter estimation}{appendix.B}% 16
+\BOOKMARK [2][-]{subsection.B.4}{Number of parameters}{appendix.B}% 17
+\BOOKMARK [2][-]{subsection.B.5}{Revoming the known part in the data}{appendix.B}% 18
+\BOOKMARK [2][-]{subsection.B.6}{Parameter estimation algorithm}{appendix.B}% 19
+\BOOKMARK [2][-]{subsection.B.7}{Parameter estimation}{appendix.B}% 20
+\BOOKMARK [2][-]{subsection.B.8}{Signal enhancement algorithm}{appendix.B}% 21
+\BOOKMARK [2][-]{subsection.B.9}{Multi channel signal enhancement algorithm}{appendix.B}% 22
+\BOOKMARK [2][-]{subsection.B.10}{Parameter estimation}{appendix.B}% 23

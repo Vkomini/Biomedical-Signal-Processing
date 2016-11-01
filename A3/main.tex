@@ -1,0 +1,112 @@
+\documentclass[a4paper]{article}
+\usepackage{fancyhdr}
+\usepackage[pdftex]{graphicx}
+\usepackage{sidecap}
+\usepackage{listings}
+\usepackage{color}
+\usepackage[export]{adjustbox}
+\usepackage{subcaption}
+\usepackage{graphicx}
+\usepackage{filecontents}
+\usepackage{pgffor}
+\usepackage{forloop}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{lineno}
+\usepackage{amsmath}
+\usepackage{hyperref}
+\usepackage{mathtools}
+\usepackage{amsmath,amsthm,amssymb}
+\numberwithin{equation}{subsection}
+\numberwithin{figure}{subsection}
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+\definecolor{mygreen}{RGB}{25,172,0} % color values Red, Green, Blue
+\definecolor{mylilas}{RGB}{170,55,241}
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta, 
+    urlcolor=cyan,
+    pdfpagemode=FullScreen,
+}
+\usepackage{geometry}
+ \geometry{
+ a4paper,
+ total={210mm,297mm},
+ left=8mm,
+ right=8mm,
+ top=15mm,
+ bottom=15mm,
+ }
+
+\definecolor{mygreen}{RGB}{25,172,0} % color values Red, Green, Blue
+\definecolor{mylilas}{RGB}{170,55,241}
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{Vangjush Komini}
+\lhead{KU Leuven}
+\rfoot{Page \thepage}
+\lfoot{Biomedical Data Processing part 2}
+
+\lstset{inputpath=Code3}
+\graphicspath{{Images3/}}
+
+\include{Glossary}
+
+
+\begin{titlepage}
+
+\title{Assignment4\\\centerline{\textit{Blind Source Separation}} }
+
+\author{
+\href{mailto:vangjush.komini@uzleuven.be}{Vangjush Komini}\\  \textit{r0612470} \\
+\href{mailto:vangjush.komini@uzleuven.be}{vangjush.komini@uzleuven.be}\\
+}
+
+\end{titlepage}
+
+\begin{document}
+
+
+\maketitle
+\begin{center}
+\Large \href{https://onderwijsaanbod.kuleuven.be/syllabi/e/H06W1AE.htm#activetab=doelstellingen_idp41200}{Biomedical Data Processing, Part II Course}
+\end{center}
+
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=0.4\textwidth]{icon2.png}
+\end{figure}
+
+\include{Q1}
+\include{Q2}
+\include{Q3}
+\include{Q4}
+\include{Q5}
+
+\clearpage
+\bibliographystyle{unsrt}
+\bibliography{Bibliography3}
+
+
+\clearpage
+\appendix
+
+\include{A1}
+\include{A2}
+\include{Appendix}
+
+\end{document}
+
